@@ -1,0 +1,1565 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="scfRJ52SiOY1zUS3SOPOR7QNjHQqu6Mba61qAA89oOQ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="labview,培训">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="听风 | Thinking" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png?v=5.1.0">
+
+
+
+
+
+
+<meta name="description" content="LabView Core1 培训笔记">
+<meta name="keywords" content="labview,培训">
+<meta property="og:type" content="article">
+<meta property="og:title" content="labview-core1培训笔记">
+<meta property="og:url" content="cxjiang.top/2018/04/25/labview-core1/index.html">
+<meta property="og:site_name" content="听风 | Thinking">
+<meta property="og:description" content="LabView Core1 培训笔记">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-25T11:35:03.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="labview-core1培训笔记">
+<meta name="twitter:description" content="LabView Core1 培训笔记">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="cxjiang.top/2018/04/25/labview-core1/">
+
+
+
+
+
+  <title> labview-core1培训笔记 | 听风 | Thinking </title>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-97192818-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f6d6670729f1a15754709bb81163a413";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">听风 | Thinking</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">The wheel turns,nothing is ever new.</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="cxjiang.top/2018/04/25/labview-core1/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cxjiang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="听风 | Thinking">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                labview-core1培训笔记
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-25T10:56:15+08:00">
+                2018-04-25
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-25T19:35:03+08:00">
+                2018-04-25
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/术业专攻/" itemprop="url" rel="index">
+                    <span itemprop="name">术业专攻</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/25/labview-core1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/04/25/labview-core1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/04/25/labview-core1/" class="leancloud_visitors" data-flag-title="labview-core1培训笔记">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  LabView Core1 培训笔记
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="LabView-Core1"><a href="#LabView-Core1" class="headerlink" title="LabView Core1"></a>LabView Core1</h1><h2 id="Lecture-1-Labview简介"><a href="#Lecture-1-Labview简介" class="headerlink" title="Lecture 1 Labview简介"></a>Lecture 1 Labview简介</h2><h3 id="LabView是什么？"><a href="#LabView是什么？" class="headerlink" title="LabView是什么？"></a>LabView是什么？</h3><p>Labview是一种图形化的编程环境，用于开发复杂的测试、测量和控制系统</p>
+<h3 id="项目浏览器"><a href="#项目浏览器" class="headerlink" title="项目浏览器"></a>项目浏览器</h3><ul>
+<li>LabView文件<ul>
+<li>Labview项目文件： <code>.lvproj</code></li>
+<li>虚拟仪器（VI）： <code>.vi</code></li>
+<li>自定义控件： <code>.ctl</code></li>
+</ul>
+</li>
+<li>项目文件夹</li>
+</ul>
+<h3 id="VI-的组成"><a href="#VI-的组成" class="headerlink" title="VI 的组成"></a>VI 的组成</h3><ul>
+<li>前面板</li>
+<li>程序框图</li>
+<li>图标/接线板</li>
+</ul>
+<h3 id="前面板"><a href="#前面板" class="headerlink" title="前面板"></a>前面板</h3><blockquote>
+<p>VI的用户界面；<br>用于创建输入控件、显示控件等；</p>
+</blockquote>
+<ul>
+<li>窗口工具栏的按钮功能</li>
+<li>控件<ul>
+<li>输入控件：输入</li>
+<li>显示控件：输出</li>
+</ul>
+</li>
+<li>控件类型<ul>
+<li>字符串型</li>
+<li>布尔型</li>
+<li>数值型</li>
+</ul>
+</li>
+<li>前面板对象样式（为了应付不同人的审美）<ul>
+<li>新式控件</li>
+<li>系统控件</li>
+<li>银色控件</li>
+<li>经典控件</li>
+</ul>
+</li>
+</ul>
+<h3 id="程序框图"><a href="#程序框图" class="headerlink" title="程序框图"></a>程序框图</h3><blockquote>
+<p>图形化源代码的集合<br>前面板对象在程序框图中为接线端</p>
+</blockquote>
+<ul>
+<li>程序框图工具栏按钮的作用</li>
+<li>函数选板（右键可见）</li>
+<li>Express VI</li>
+<li>节点外观（理解为“封装”）</li>
+<li><strong>连线</strong><ul>
+<li>用于在程序框图对象间传递数据（只能有一个数据源，但可以有多个读取端）</li>
+<li>断线（VI断开的常见原因）<ul>
+<li>输入输出的数据类型不匹配</li>
+<li>数据的输入输出端接的并不是输入控件和显示控件（或者接受信号的控件）</li>
+<li>仪器需要的输入信号缺失</li>
+</ul>
+</li>
+<li>浮点型、整型、字符串型、布尔型的一位二维数组的连线颜色</li>
+</ul>
+</li>
+<li>范例<ul>
+<li>点击<code>帮助</code>—&gt;<code>查找范例</code>浏览和查找范例</li>
+</ul>
+</li>
+</ul>
+<h2 id="Lecture2-创建首个程序"><a href="#Lecture2-创建首个程序" class="headerlink" title="Lecture2 创建首个程序"></a>Lecture2 创建首个程序</h2><h3 id="数据流"><a href="#数据流" class="headerlink" title="数据流"></a>数据流</h3><ul>
+<li>只有接收到全部输入数据后，节点才开始执行！</li>
+<li>节点执行结束后，才向输出端提供数据！<blockquote>
+<p>并型结构，无法判断接收并型数据的仪器哪个先执行</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="LabView数据类型"><a href="#LabView数据类型" class="headerlink" title="LabView数据类型"></a>LabView数据类型</h3><ul>
+<li>接线端可以直观的反映数据类型的信息（主要看颜色）</li>
+<li>布尔型有很多机械动作（本质上和看时序图一样）</li>
+<li>数值数据表示法<ul>
+<li>Orange表示浮点型数据：SGL-4Byte；DBL-8Byte</li>
+<li>Blue表示整型或无符号整型：无符号8bit—U8，范围为0-255</li>
+<li>红点表示强制转换点</li>
+</ul>
+</li>
+<li>字符串</li>
+<li>其他类型数据<ul>
+<li>动态：保存Express VI产生或保存的数据</li>
+<li>路径：保存文件或路径的位置</li>
+<li>波形：包含波形的数据、起始时间、时间间隔<h3 id="编写、整理和组织VI的工具"><a href="#编写、整理和组织VI的工具" class="headerlink" title="编写、整理和组织VI的工具"></a>编写、整理和组织VI的工具</h3></li>
+</ul>
+</li>
+</ul>
+<h3 id="创建一个简单VI"><a href="#创建一个简单VI" class="headerlink" title="创建一个简单VI"></a>创建一个简单VI</h3><h2 id="Lecture-3-疑难解答和调试VI"><a href="#Lecture-3-疑难解答和调试VI" class="headerlink" title="Lecture 3 疑难解答和调试VI"></a>Lecture 3 疑难解答和调试VI</h2><h3 id="纠正断开的VI"><a href="#纠正断开的VI" class="headerlink" title="纠正断开的VI"></a>纠正断开的VI</h3><ul>
+<li>VI断开的常见原因<ul>
+<li>输入输出的数据类型不匹配</li>
+<li>数据的输入输出端接的并不是输入控件和显示控件（或者接受信号的控件）</li>
+<li>仪器需要的输入信号缺失</li>
+</ul>
+</li>
+<li>点击错误处即可查看错误详情<ul>
+<li>错误项</li>
+<li>错误和警告</li>
+<li>详细信息</li>
+</ul>
+</li>
+</ul>
+<h3 id="调试技巧"><a href="#调试技巧" class="headerlink" title="调试技巧"></a>调试技巧</h3><ul>
+<li>调试工具（窗口工具栏那一排按钮）</li>
+<li>断点</li>
+<li>未定义或未预期的数据<ul>
+<li>无穷大：Inf</li>
+<li>错误数：NaN（根号下为负号等）<h3 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h3></li>
+</ul>
+</li>
+<li>错误簇（黄色的线）<ul>
+<li>状态</li>
+<li>代码</li>
+<li>源</li>
+</ul>
+</li>
+<li>错误和警告的关系<ul>
+<li>状态为<code>真</code>，说明存在错误，无法执行</li>
+<li>状态为<code>假</code>，说明是警告，依然可以执行</li>
+</ul>
+</li>
+<li>合并错误<br>  <strong>只会显示第一个错误！</strong></li>
+</ul>
+<h2 id="Lecture-4-使用循环结构"><a href="#Lecture-4-使用循环结构" class="headerlink" title="Lecture 4 使用循环结构"></a>Lecture 4 使用循环结构</h2><h3 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h3><table>
+<thead>
+<tr>
+<th>For循环</th>
+<th>While循环</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>未添加条件接线端，For循环按照设定次数执行</td>
+<td>仅当条件接线端接收到符合条件的值才停止执行</td>
+</tr>
+<tr>
+<td>可执行0次</td>
+<td>至少执行1次</td>
+</tr>
+<tr>
+<td>隧道自动输出一个数组</td>
+<td>隧道自动输出最后一次执行的值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="While循环"><a href="#While循环" class="headerlink" title="While循环"></a>While循环</h3><ul>
+<li>隧道<br>  循环框与输入输出连线相交得到的小方框</li>
+<li>错误检查和处理<br>  将程序放在While循环中，将错误输出信号连接到条件接线端，实现发生错误就自动停止。</li>
+</ul>
+<h3 id="For循环"><a href="#For循环" class="headerlink" title="For循环"></a>For循环</h3><ul>
+<li>在程序框上右键可以添加<code>条件接线端</code></li>
+<li>总数接线端数值转换<br>  循环次数为整型！转换为长整型可节省内存。</li>
+</ul>
+<h3 id="VI定时"><a href="#VI定时" class="headerlink" title="VI定时"></a>VI定时</h3><ul>
+<li>循环内部的等待函数可使VI在某段时间内处于休眠状态，在这段时间内，处理器可以分配其他任务</li>
+<li>等待函数使用的是操作系统的时钟<ul>
+<li>等待#毫秒</li>
+<li>等待下一个整数倍毫秒<br>+<h3 id="循环中的数据反馈"><a href="#循环中的数据反馈" class="headerlink" title="循环中的数据反馈"></a>循环中的数据反馈</h3></li>
+</ul>
+</li>
+<li>移位寄存器<ul>
+<li>以一对循环计数对的形式出现</li>
+<li>没有初始化是，整型默认起始为<code>0</code>，字符串为<code>空</code>，布尔型为<code>假</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="绘制数据图表"><a href="#绘制数据图表" class="headerlink" title="绘制数据图表"></a>绘制数据图表</h3><ul>
+<li>波形图表</li>
+<li>波形图表属性</li>
+</ul>
+<h2 id="Lecture5-创建和使用数据结构"><a href="#Lecture5-创建和使用数据结构" class="headerlink" title="Lecture5 创建和使用数据结构"></a>Lecture5 创建和使用数据结构</h2><h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><ul>
+<li>创建数组（<strong>数组里面不能加数组</strong>）</li>
+<li>索引编号，<strong>第一个元素为0</strong>！</li>
+<li>初始化数组（填入一些数据）<h3 id="常见数组函数"><a href="#常见数组函数" class="headerlink" title="常见数组函数"></a>常见数组函数</h3></li>
+<li><strong>数组插入</strong>（eg，一行3列插入到两行4列，随后列数以插入的为准，即三行三列）</li>
+<li>删除数组元素</li>
+<li>数组对大最小值</li>
+<li>搜索一维数组<h3 id="多态性"><a href="#多态性" class="headerlink" title="多态性"></a>多态性</h3></li>
+<li>数组+标量–&gt;每个元素都加</li>
+<li><strong>数组+数组–&gt;以较短数组为准</strong><h3 id="自动索引"><a href="#自动索引" class="headerlink" title="自动索引"></a>自动索引</h3></li>
+<li>启动自动索引，将数组连接至循环结构，启用自动索引可有序对应循环与数组中的元素，右键单击隧道即可进行设置。</li>
+<li>创建二维数组（两个For循环嵌套，最外面用自动索引）</li>
+<li>自动索引输入（可以不用设置循环次数）</li>
+<li>自动索引输入与数组大小的区别（循环次数取决于自动索引次数中最小的再-1）<h3 id="簇"><a href="#簇" class="headerlink" title="簇"></a>簇</h3></li>
+<li>使用簇的原因<ul>
+<li>簇将不同类型的文本归为一个整体</li>
+<li>簇类似于文本编程语言中的结构体</li>
+</ul>
+</li>
+<li>簇与数组</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>簇</th>
+<th>数组</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>混合数据类型</td>
+<td>单一数据类型</td>
+</tr>
+<tr>
+<td>大小固定</td>
+<td>大小不固定</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>创建簇控件和常量</li>
+<li>对项进行排序并调整簇大小</li>
+<li>分解簇和改变簇<ul>
+<li>解除捆绑（按名称和不按名称）</li>
+<li>更改簇，捆绑（按名称，不按名称）</li>
+</ul>
+</li>
+<li>绘制数据图表<h3 id="自定义类型"><a href="#自定义类型" class="headerlink" title="自定义类型"></a>自定义类型</h3></li>
+<li>控件类型<ul>
+<li>控件</li>
+<li>自定义控件</li>
+<li>严格自定义控件</li>
+</ul>
+</li>
+</ul>
+<h2 id="Lecture-6-使用决策结构"><a href="#Lecture-6-使用决策结构" class="headerlink" title="Lecture 6 使用决策结构"></a>Lecture 6 使用决策结构</h2><h3 id="条件结构"><a href="#条件结构" class="headerlink" title="条件结构"></a>条件结构</h3><ul>
+<li>条件结构 满足条件才执行—&gt;条件接线端</li>
+<li>选择器接线端的数据类型 （除了数组，其他的都支持）</li>
+<li>输入和输出隧道<ul>
+<li>输入隧道数据可供全部条件分支使用</li>
+<li>必须为每个条件分支定义其输出隧道<h3 id="事件驱动编程"><a href="#事件驱动编程" class="headerlink" title="事件驱动编程"></a>事件驱动编程</h3></li>
+</ul>
+</li>
+<li>事件驱动场景</li>
+<li>编辑事件对话框</li>
+</ul>
+<h2 id="Lecture-7-模块化"><a href="#Lecture-7-模块化" class="headerlink" title="Lecture 7 模块化"></a>Lecture 7 模块化</h2><h3 id="理解模块化概念"><a href="#理解模块化概念" class="headerlink" title="理解模块化概念"></a>理解模块化概念</h3><ul>
+<li>模块化</li>
+<li>子VI–重用代码<h3 id="图标"><a href="#图标" class="headerlink" title="图标"></a>图标</h3></li>
+<li>VI的图表化表示</li>
+<li>标记VI程序框图，传达VI功能<h3 id="连线板"><a href="#连线板" class="headerlink" title="连线板"></a>连线板</h3></li>
+<li>位于图标左侧</li>
+<li>可选择不同方式</li>
+<li>指定连线端<h3 id="说明信息"><a href="#说明信息" class="headerlink" title="说明信息"></a>说明信息</h3></li>
+<li>VI说明信息： <code>文件</code>–&gt;<code>VI属性</code>–&gt;<code>说明信息</code></li>
+<li>插入自带标签或自由标签<h3 id="使用子VI"><a href="#使用子VI" class="headerlink" title="使用子VI"></a>使用子VI</h3></li>
+<li>保存在项目中直接拖拽使用</li>
+<li>选中后，点击编辑，快速创建子VI</li>
+</ul>
+<h2 id="Lecture-8-硬件结合（略）"><a href="#Lecture-8-硬件结合（略）" class="headerlink" title="Lecture 8 硬件结合（略）"></a>Lecture 8 硬件结合（略）</h2><h2 id="Lecture-9-在LabView中访问文件"><a href="#Lecture-9-在LabView中访问文件" class="headerlink" title="Lecture 9 在LabView中访问文件"></a>Lecture 9 在LabView中访问文件</h2><h3 id="在LabView中访问文件"><a href="#在LabView中访问文件" class="headerlink" title="在LabView中访问文件"></a>在LabView中访问文件</h3><ul>
+<li>常规文件操作<ol>
+<li>打开/创建/替换文件</li>
+<li>读取和/或写入文件</li>
+<li>关闭文件</li>
+<li>检查错误</li>
+</ol>
+</li>
+</ul>
+<h3 id="高层和底层文件的I-O"><a href="#高层和底层文件的I-O" class="headerlink" title="高层和底层文件的I/O"></a>高层和底层文件的I/O</h3><ul>
+<li>文件引用句柄（指定文件唯一的I/O会话）<br>*<h3 id="比较文件格式"><a href="#比较文件格式" class="headerlink" title="比较文件格式"></a>比较文件格式</h3></li>
+</ul>
+<h2 id="Lecture-10-使用顺序和状态机编程"><a href="#Lecture-10-使用顺序和状态机编程" class="headerlink" title="Lecture 10 使用顺序和状态机编程"></a>Lecture 10 使用顺序和状态机编程</h2><h3 id="顺序编程"><a href="#顺序编程" class="headerlink" title="顺序编程"></a>顺序编程</h3><blockquote>
+<p>使用数据流确保节点按顺序执行</p>
+</blockquote>
+<ul>
+<li>为何使用顺序编程<ul>
+<li>确定<code>读取</code>，<code>通知</code>，<code>再读取</code>，<code>关闭</code>的顺序（也可以用错误簇来控制）</li>
+</ul>
+</li>
+<li>顺序结构<ul>
+<li>顺序结构是由多个帧组成的结构，按照帧的先后顺序执行</li>
+<li>顺序执行过程中不能中断，因此避免过度使用顺序结构</li>
+</ul>
+</li>
+<li>错误条件结构<ul>
+<li>用条件触发，相当于一帧的条件接线端</li>
+</ul>
+</li>
+</ul>
+<h3 id="状态编程"><a href="#状态编程" class="headerlink" title="状态编程"></a>状态编程</h3><blockquote>
+<p>说明状态转换图表示的功能</p>
+</blockquote>
+<ul>
+<li><p>为何使用状态编程</p>
+<ul>
+<li>改变执行顺序</li>
+<li>重复执行顺序中的某一项</li>
+<li>只要满足条件时执行</li>
+<li>使程序随即停止</li>
+</ul>
+</li>
+<li><p>状态转换图–easy</p>
+</li>
+</ul>
+<h3 id="状态机"><a href="#状态机" class="headerlink" title="状态机"></a>状态机</h3><ul>
+<li>何时使用状态及<ul>
+<li>顺序流程</li>
+<li>UI驱动的流程</li>
+</ul>
+</li>
+<li>在状态及之间实现转移<ul>
+<li>单个默认转移</li>
+<li>单个函数转移</li>
+<li>条件结构转移</li>
+<li>转移数组</li>
+</ul>
+</li>
+<li>状态机的基本执行元素<ul>
+<li>while循环</li>
+<li>条件结构</li>
+<li>移位寄存器</li>
+</ul>
+</li>
+</ul>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p>C+e：前面板和程序框图切换<br>C+h：显示帮助  </p>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qrcode.jpg" alt="cxjiang wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.JPG" alt="cxjiang WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.JPG" alt="cxjiang Alipay">
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      cxjiang
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="cxjiang.top/2018/04/25/labview-core1/" title="labview-core1培训笔记">cxjiang.top/2018/04/25/labview-core1/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/LabView/" rel="tag"># LabView</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/19/vps-hexo-git/" rel="next" title="macOS下将Hexo博客Git提交到VPS进行更新">
+                <i class="fa fa-chevron-left"></i> macOS下将Hexo博客Git提交到VPS进行更新
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/16/shanghaitech-2018commencement/" rel="prev" title="2018.6.16上海科技大学毕业典礼--赵忠贤院士演讲">
+                2018.6.16上海科技大学毕业典礼--赵忠贤院士演讲 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="cxjiang">
+          <p class="site-author-name" itemprop="name">cxjiang</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">62</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">81</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="mailto:&#106;&#99;&#120;&#55;&#48;&#49;&#48;&#48;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109" target="_blank" title="Email">
+                  
+                    <i class="fa fa-fw fa-envelope-o"></i>
+                  
+                  Email
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/1699473805/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/jcx70100" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/u/340c09a97d3a" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-book"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://onedrive.live.com/?authkey=%21APdZwNrXUE7iLSY&id=CC9BE3F0ECB7164%219399&cid=0CC9BE3F0ECB7164" target="_blank" title="Files分享">
+                  
+                    <i class="fa fa-fw fa-share-alt"></i>
+                  
+                  Files分享
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons">
+            </a>
+          </div>
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.czu.cn/" title="CIT" target="_blank">CIT</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.wmakh.com/" title="WMA&KH" target="_blank">WMA&KH</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#LabView-Core1"><span class="nav-number">1.</span> <span class="nav-text">LabView Core1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-1-Labview简介"><span class="nav-number">1.1.</span> <span class="nav-text">Lecture 1 Labview简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LabView是什么？"><span class="nav-number">1.1.1.</span> <span class="nav-text">LabView是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#项目浏览器"><span class="nav-number">1.1.2.</span> <span class="nav-text">项目浏览器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VI-的组成"><span class="nav-number">1.1.3.</span> <span class="nav-text">VI 的组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#前面板"><span class="nav-number">1.1.4.</span> <span class="nav-text">前面板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序框图"><span class="nav-number">1.1.5.</span> <span class="nav-text">程序框图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture2-创建首个程序"><span class="nav-number">1.2.</span> <span class="nav-text">Lecture2 创建首个程序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据流"><span class="nav-number">1.2.1.</span> <span class="nav-text">数据流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LabView数据类型"><span class="nav-number">1.2.2.</span> <span class="nav-text">LabView数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编写、整理和组织VI的工具"><span class="nav-number">1.2.3.</span> <span class="nav-text">编写、整理和组织VI的工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建一个简单VI"><span class="nav-number">1.2.4.</span> <span class="nav-text">创建一个简单VI</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-3-疑难解答和调试VI"><span class="nav-number">1.3.</span> <span class="nav-text">Lecture 3 疑难解答和调试VI</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#纠正断开的VI"><span class="nav-number">1.3.1.</span> <span class="nav-text">纠正断开的VI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调试技巧"><span class="nav-number">1.3.2.</span> <span class="nav-text">调试技巧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#错误处理"><span class="nav-number">1.3.3.</span> <span class="nav-text">错误处理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-4-使用循环结构"><span class="nav-number">1.4.</span> <span class="nav-text">Lecture 4 使用循环结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#循环结构"><span class="nav-number">1.4.1.</span> <span class="nav-text">循环结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#While循环"><span class="nav-number">1.4.2.</span> <span class="nav-text">While循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#For循环"><span class="nav-number">1.4.3.</span> <span class="nav-text">For循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VI定时"><span class="nav-number">1.4.4.</span> <span class="nav-text">VI定时</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#循环中的数据反馈"><span class="nav-number">1.4.5.</span> <span class="nav-text">循环中的数据反馈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绘制数据图表"><span class="nav-number">1.4.6.</span> <span class="nav-text">绘制数据图表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture5-创建和使用数据结构"><span class="nav-number">1.5.</span> <span class="nav-text">Lecture5 创建和使用数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数组"><span class="nav-number">1.5.1.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见数组函数"><span class="nav-number">1.5.2.</span> <span class="nav-text">常见数组函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多态性"><span class="nav-number">1.5.3.</span> <span class="nav-text">多态性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自动索引"><span class="nav-number">1.5.4.</span> <span class="nav-text">自动索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#簇"><span class="nav-number">1.5.5.</span> <span class="nav-text">簇</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义类型"><span class="nav-number">1.5.6.</span> <span class="nav-text">自定义类型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-6-使用决策结构"><span class="nav-number">1.6.</span> <span class="nav-text">Lecture 6 使用决策结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#条件结构"><span class="nav-number">1.6.1.</span> <span class="nav-text">条件结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事件驱动编程"><span class="nav-number">1.6.2.</span> <span class="nav-text">事件驱动编程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-7-模块化"><span class="nav-number">1.7.</span> <span class="nav-text">Lecture 7 模块化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#理解模块化概念"><span class="nav-number">1.7.1.</span> <span class="nav-text">理解模块化概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图标"><span class="nav-number">1.7.2.</span> <span class="nav-text">图标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#连线板"><span class="nav-number">1.7.3.</span> <span class="nav-text">连线板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说明信息"><span class="nav-number">1.7.4.</span> <span class="nav-text">说明信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用子VI"><span class="nav-number">1.7.5.</span> <span class="nav-text">使用子VI</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-8-硬件结合（略）"><span class="nav-number">1.8.</span> <span class="nav-text">Lecture 8 硬件结合（略）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-9-在LabView中访问文件"><span class="nav-number">1.9.</span> <span class="nav-text">Lecture 9 在LabView中访问文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在LabView中访问文件"><span class="nav-number">1.9.1.</span> <span class="nav-text">在LabView中访问文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高层和底层文件的I-O"><span class="nav-number">1.9.2.</span> <span class="nav-text">高层和底层文件的I/O</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#比较文件格式"><span class="nav-number">1.9.3.</span> <span class="nav-text">比较文件格式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-10-使用顺序和状态机编程"><span class="nav-number">1.10.</span> <span class="nav-text">Lecture 10 使用顺序和状态机编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#顺序编程"><span class="nav-number">1.10.1.</span> <span class="nav-text">顺序编程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#状态编程"><span class="nav-number">1.10.2.</span> <span class="nav-text">状态编程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#状态机"><span class="nav-number">1.10.3.</span> <span class="nav-text">状态机</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷键"><span class="nav-number">1.11.</span> <span class="nav-text">快捷键</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+
+
+<div class="copyright">
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-star">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">cxjiang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+
+
+<div>
+<span id="busuanzi_container_site_pv">
+    Total visited <span id="busuanzi_value_site_pv"></span> times
+</span>
+</div>
+
+<div>
+<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+</div>
+
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://tingfeng.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'cxjiang.top/2018/04/25/labview-core1/';
+          this.page.identifier = '2018/04/25/labview-core1/';
+          this.page.title = 'labview-core1培训笔记';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://tingfeng.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("wg8YqRpHsKpFeakal2Auq3Gp-gzGzoHsz", "WDfyk7eOEE9M6815p1xb9Hle");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+
+  
+
+</body>
+</html>

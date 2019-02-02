@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Disallow: /css/
+Disallow: /js/
+
+Sitemap: http://cxjiang.top/sitemap.xml
+Sitemap: http://cxjiang.top/baidusitemap.xml

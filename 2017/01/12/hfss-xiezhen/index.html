@@ -1,0 +1,1528 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="scfRJ52SiOY1zUS3SOPOR7QNjHQqu6Mba61qAA89oOQ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="HFSS,介质谐振器,实践案例教学,设计报告,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="听风 | Thinking" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png?v=5.1.0">
+
+
+
+
+
+
+<meta name="description" content="基于HFSS的介质谐振器的设计与仿真  一、设计要求本次专业选修课1实践案例教学主要学习利用EDA仿真软件HFSS进行介质谐振器的设计和仿真。 通过该软件，加强对介质谐振器的理解和掌握，提高在射频领域的应用能力。 要求基于介质谐振器器件的理论，利用HFSS设计一个介质谐振器，分析介质谐振器的性能等。">
+<meta name="keywords" content="HFSS,介质谐振器,实践案例教学,设计报告">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于HFSS的介质谐振器的设计与仿真">
+<meta property="og:url" content="cxjiang.top/2017/01/12/hfss-xiezhen/index.html">
+<meta property="og:site_name" content="听风 | Thinking">
+<meta property="og:description" content="基于HFSS的介质谐振器的设计与仿真  一、设计要求本次专业选修课1实践案例教学主要学习利用EDA仿真软件HFSS进行介质谐振器的设计和仿真。 通过该软件，加强对介质谐振器的理解和掌握，提高在射频领域的应用能力。 要求基于介质谐振器器件的理论，利用HFSS设计一个介质谐振器，分析介质谐振器的性能等。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="/12/hfss-xiezhen/3-1.png">
+<meta property="og:image" content="/12/hfss-xiezhen/3-2.png">
+<meta property="og:image" content="/12/hfss-xiezhen/3-3.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-1.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-2.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-3.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-4.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-5.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-6.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-7.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-8.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-9.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-10.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-11.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-12.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-13.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-14.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-16.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-17.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-18.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19-1.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19-2%0A.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19-3%0A.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19-4.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19-5.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19-6.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19-7.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19-8.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19-9.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19-10.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19-11.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-19-12.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-20.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-21.png">
+<meta property="og:image" content="/12/hfss-xiezhen/4-22.png">
+<meta property="og:image" content="/12/hfss-xiezhen/5-1.png">
+<meta property="og:updated_time" content="2017-04-09T07:47:35.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="基于HFSS的介质谐振器的设计与仿真">
+<meta name="twitter:description" content="基于HFSS的介质谐振器的设计与仿真  一、设计要求本次专业选修课1实践案例教学主要学习利用EDA仿真软件HFSS进行介质谐振器的设计和仿真。 通过该软件，加强对介质谐振器的理解和掌握，提高在射频领域的应用能力。 要求基于介质谐振器器件的理论，利用HFSS设计一个介质谐振器，分析介质谐振器的性能等。">
+<meta name="twitter:image" content="/12/hfss-xiezhen/3-1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="cxjiang.top/2017/01/12/hfss-xiezhen/">
+
+
+
+
+
+  <title> 基于HFSS的介质谐振器的设计与仿真 | 听风 | Thinking </title>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-97192818-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f6d6670729f1a15754709bb81163a413";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">听风 | Thinking</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">The wheel turns,nothing is ever new.</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="cxjiang.top/2017/01/12/hfss-xiezhen/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cxjiang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="听风 | Thinking">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                基于HFSS的介质谐振器的设计与仿真
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-12T15:55:27+08:00">
+                2017-01-12
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-04-09T15:47:35+08:00">
+                2017-04-09
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/术业专攻/" itemprop="url" rel="index">
+                    <span itemprop="name">术业专攻</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/01/12/hfss-xiezhen/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/01/12/hfss-xiezhen/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/01/12/hfss-xiezhen/" class="leancloud_visitors" data-flag-title="基于HFSS的介质谐振器的设计与仿真">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <center><strong>基于HFSS的介质谐振器的设计与仿真</strong></center>
+
+<h2 id="一、设计要求"><a href="#一、设计要求" class="headerlink" title="一、设计要求"></a>一、设计要求</h2><p>本次专业选修课1实践案例教学主要学习利用EDA仿真软件HFSS进行介质谐振器的设计和仿真。</p>
+<p>通过该软件，加强对介质谐振器的理解和掌握，提高在射频领域的应用能力。</p>
+<p>要求基于介质谐振器器件的理论，利用HFSS设计一个介质谐振器，分析介质谐振器的性能等。</p>
+<a id="more"></a>
+<h2 id="二、设计方案"><a href="#二、设计方案" class="headerlink" title="二、设计方案"></a>二、设计方案</h2><p>方法1：定义一个微带传输线穿过腔体，并激励微带传输线。微带线对腔体起负载 效果，这与传输线的位置、终端等有关。因此，使用这个方法进行研究取决于反馈结构， 模式可能被遗漏。</p>
+<p>方法 2：使用本征模式（Eigenmode）计算得到圆柱形介质谐振器的自身响应。</p>
+<p>我们使用第二种方法。由于本征模算法不需要端口激励，只要设定好几何模型和边界条件。我们只计算出现在这个结构中的前 6 个模。</p>
+<h2 id="三、设计原理"><a href="#三、设计原理" class="headerlink" title="三、设计原理"></a>三、设计原理</h2><p>介质谐振器被设计工作在给定的频率范围，并且谐振器附近的电磁场应该只有预期中特定的几种模。然而，使用了谐振回路后，异常模频繁地干扰正常模。</p>
+<p>通过大量的实践能够确定存在一个给定结构中模的耗损功率、谐振器的频率、模和能量，因此谐振器的工作和耦合情况也能够确定。</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/3-1.png" alt="图3-1 模块图"><br></div></p>
+<p><center> 图3-1 模块图</center></p>
+<p>在圆柱介质中能够起振的通常表示为 TE0,m,δ ，TM 0,m,δ 和 HEMn,m,δ ，分别为横电模，横磁模和混合模。下标 m，n 和δ分别表示方位角上，径向和轴向上的波数。</p>
+<p>模型的尺寸如下面的图表所示。</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/3-2.png" alt="图3-2 模型尺寸"><br></div></p>
+<p><center> 图3-2 模型尺寸</center></p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/3-3.png" alt="图3-3 模型参数示意图"><br></div></p>
+<p><center> 图3-3 模型参数示意图</center></p>
+<h2 id="四、设计步骤及内容"><a href="#四、设计步骤及内容" class="headerlink" title="四、设计步骤及内容"></a>四、设计步骤及内容</h2><h3 id="（一）运行-Ansoft-HFSS"><a href="#（一）运行-Ansoft-HFSS" class="headerlink" title="（一）运行 Ansoft HFSS"></a>（一）运行 Ansoft HFSS</h3><h3 id="（二）设置工具选项"><a href="#（二）设置工具选项" class="headerlink" title="（二）设置工具选项"></a>（二）设置工具选项</h3><p>1.具体操作步骤：</p>
+<p>1）选择菜单项 Tool &gt; Options &gt; HFSS Options</p>
+<p>2）在 HFSS 选项窗口：</p>
+<p>单击 General 属性页 勾选“创建新边界时使用向导输入数据”.（Use Wizards for data entry when creating new boundaries） 勾选“复制几何模型边界”.（Duplicate boundaries with geometry）</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-1.png" alt="图4-1 HFSS Options"><br></div></p>
+<p><center> 图4-1 HFSS Options</center></p>
+<p>3）选择菜单项 Tool &gt; Options &gt; 3D Modeler Options.</p>
+<p>4）在三维模型选项窗口：</p>
+<p>单击 Operation 属性页，勾选“自动闭合多边线”（Automatically cover closed polylines） 。单击 Drawing 属性页，勾选 “编辑新原始模型的属性”（Edit property of new primitives） 。也就是画完一个形状或物体，会自动弹出它的属性框让你修改。</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-2.png" alt="图4-2 3D Modeler Options"><br></div></p>
+<p><center> 图4-2 3D Modeler Options </center></p>
+<h3 id="（三）新建一个工程"><a href="#（三）新建一个工程" class="headerlink" title="（三）新建一个工程"></a>（三）新建一个工程</h3><p>1.具体操作步骤：</p>
+<p>在 HFSS ，或者选择菜单项 File &gt; New.从 Project 菜单，选择 Insert HFSS Design。</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-3.png" alt="图4-3 Project Manager"><br></div></p>
+<p><center> 图4-3 Project Manager </center></p>
+<h3 id="（四）设置解决方案类型"><a href="#（四）设置解决方案类型" class="headerlink" title="（四）设置解决方案类型"></a>（四）设置解决方案类型</h3><p>1.具体操作步骤：</p>
+<p>选择菜单 HFSS &gt; Solution Type</p>
+<p>2.在解决方案类型设置窗口：<br>选中 Eigenmode，单击 OK 按钮</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-4.png" alt="图4-4 Solution Type"><br></div></p>
+<p><center> 图4-4 Solution Type</center></p>
+<h3 id="（五）创建三维模型"><a href="#（五）创建三维模型" class="headerlink" title="（五）创建三维模型"></a>（五）创建三维模型</h3><p>1.设置模型单位</p>
+<p>1）选择菜单 3D Modeler &gt; Units</p>
+<p>2）单击 OK 按钮</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-5.png" alt="图4-5 Set Model Units"><br></div></p>
+<p><center> 图4-5 Set Model Units</center></p>
+<p>2.设置默认材质</p>
+<p>在三维模型材质工具栏上，选择 Vacuum</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-6.png" alt="图4-6 材质选择"><br></div></p>
+<p><center> 图4-6 材质选择</center></p>
+<p>3.创建一个空腔</p>
+<p>1）创建圆柱体：从 3D 模型工具栏上选择圆柱体图标</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-7.png" alt="图4-7 3D模型工具栏"><br></div></p>
+<p><center> 图4-7 3D模型工具栏</center></p>
+<p>2） 使用坐标输入框，输入中心基点坐标</p>
+<pre><code>X: 0.0, Y: 0.0, Z:0.0
+按 Enter 键结束
+</code></pre><p>3） 确认在 3D 模型工具栏上的坐标平面设置为 xy。然后在 x 输入框设置腔体 的半径，在 z 输入框设置腔体高度。</p>
+<pre><code>注意：不能直接使用坐标输入框中的参数。
+
+dX:15.0, dY: 0.0, dZ:10.0,
+按 Enter 键结束
+</code></pre><p>4.参数化腔体高度：</p>
+<p>  1） 在高度（Height）输入框填上参数名‘Hwall’</p>
+<p>  2） 单击 Enter 键 HFSS 会要你填写参数值</p>
+<p>  3） 写上‘10mm’-不要忘了写上单位!</p>
+<p>  <div align="center"><br>  <img src="/12/hfss-xiezhen/4-8.png" alt="图4-8 模块属性"><br>  </div><br>  <center> 图4-8 模块属性</center></p>
+<p>5.更改名字：</p>
+<p>  从属性窗口选择 Attribute 属性页，在 Name 栏输入：Cavity</p>
+<p>6.设置显示方式为 Wireframe：</p>
+<p>  1） 从属性窗口选中 Attribute 属性页</p>
+<p>  2） 勾选“显示金属丝框架”（Display Wireframe）</p>
+<p>  3） 单击 OK 按钮</p>
+<p>  <div align="center"><br>  <img src="/12/hfss-xiezhen/4-9.png" alt="图4-9 模块预览图"><br>  </div><br>  <center> 图4-9 模块预览图</center></p>
+<p>7.设置最佳观看：</p>
+<p>选择菜单 View &gt; Fit All &gt; Active View  或使用快捷键 Ctrl+D</p>
+<h3 id="（六）创建一个新的材质并设为置默认材质"><a href="#（六）创建一个新的材质并设为置默认材质" class="headerlink" title="（六）创建一个新的材质并设为置默认材质"></a>（六）创建一个新的材质并设为置默认材质</h3><p>1.创建新材质：</p>
+<p>1)    在三维模型材质工具栏，选择 Select</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-10.png" alt="图4-10 材料选择"><br></div></p>
+<p><center> 图4-10 材料选择</center></p>
+<p>2)    单击‘Add Material’按钮</p>
+<p>3)    设置材质名为 subs</p>
+<p>4)    设置介质的介电常数εr为 9.6，其余为默认不变</p>
+<p>5)    单击‘OK’</p>
+<p>6)    增加一个名为DielRes的新材质，εr=36</p>
+<p>2.设置默认材质：<br>    现在可以通过选择列表中的 subs 并单击 OK 来设置默认材质。</p>
+<h3 id="（七）创建基层"><a href="#（七）创建基层" class="headerlink" title="（七）创建基层"></a>（七）创建基层</h3><p>1.创建圆柱体：</p>
+<p>1） 从 3D 模型工具栏上选择圆柱体图标</p>
+<p>2） 使用坐标输入框，输入中心基点坐标</p>
+<pre><code>X: 0.0, Y: 0.0, Z:0.0, 按 Enter 键结束
+</code></pre><p>3） 设置坐标平面为 xy。然后在 x 输入框设置腔体的半径，在 z 输入框设置腔体高度。</p>
+<pre><code>dX:15.0, dY: 0.0, dZ:-1.0, 按 Enter 键结束
+</code></pre><p>2.更改名字：</p>
+<p>从属性窗口选择 Attribute 属性页，在 Name 栏输入：Substrate</p>
+<p>3.现在可以设置喜欢的颜色和透明度</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-11.png" alt="图4-11 模块预览图"><br></div></p>
+<p><center> 图4-11 模块预览图</center></p>
+<h3 id="（八）设置默认材质"><a href="#（八）设置默认材质" class="headerlink" title="（八）设置默认材质"></a>（八）设置默认材质</h3><p>在 3D 模型材质工具栏上选择前面创建的 DielRes 材质</p>
+<h3 id="（九）创建介质谐振器"><a href="#（九）创建介质谐振器" class="headerlink" title="（九）创建介质谐振器"></a>（九）创建介质谐振器</h3><p>1.创建表示谐振器的圆柱体：</p>
+<p>1） 从 3D 模型工具栏上选择圆柱体图标</p>
+<p>2） 使用坐标输入框，输入中心基点坐标</p>
+<pre><code>X: 0.0, Y: 0.0, Z:0.0, 按 Enter 键结束
+</code></pre><p>3） 设置坐标平面为 xy。然后在 x 输入框设置腔体的半径，在 z 输入框设置腔体高度。</p>
+<pre><code>dX:5.0, dY: 0.0, dZ:5.0, 按 Enter 键结束
+</code></pre><p>2.更改名字：</p>
+<p>从属性窗口选择 Attribute 属性页， 在 Name 栏输入：DielRes</p>
+<p>3.你现在可以设置你喜欢的颜色和透明度</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-12.png" alt="图4-12 模块预览图"><br></div></p>
+<p><center> 图4-12 模块预览图</center></p>
+<h4 id="（十）设置边界条件"><a href="#（十）设置边界条件" class="headerlink" title="（十）设置边界条件"></a>（十）设置边界条件</h4><p>我们已经建立了完整的模型，在分析之前唯一没做的就是设定边界条件，边界应该应用到腔体和基层的其它部分。</p>
+<p>HFSS 给每个可见的模型指定默认的边界‘Perfect Electrical Conductor’（PEC） 。如果你想让谐振器嵌套在一个铝制腔体中，你可以设定边界来取代 HFSS 默认指定 的边界。这样做会影响谐振器的品质因素和共振模。到底有多少影响我们可以使用本征模解算起容易地得到。</p>
+<p>但是这个例子将坚持使用 HFSS 默认的边界条件，因此我们把谐振器有效地封装在 理想导体腔中。</p>
+<h3 id="（十一）分析设置"><a href="#（十一）分析设置" class="headerlink" title="（十一）分析设置"></a>（十一）分析设置</h3><p>一）创建一个分析设置</p>
+<p>1.具体操作步骤：</p>
+<p>1）选择菜单 HFSS &gt; Analysis Setup &gt; Add Solution Setup</p>
+<p>2）在解决方案设置窗体中：</p>
+<p>单击 General 属性页：最小频率：3GHz、模式数目：6、最大步数：14、频率每步最大变化：2.5%</p>
+<p>在 Options 属性页中：最小收敛步数：3</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-13.png" alt="图4-13 Solution Setup"><br></div></p>
+<p><center> 图4-13 Solution Setup</center></p>
+<h3 id="（十二）保存工程"><a href="#（十二）保存工程" class="headerlink" title="（十二）保存工程"></a>（十二）保存工程</h3><p>具体操作步骤：</p>
+<p>在 HFSS 窗口，选择菜单 File &gt; Save As。在 Save As 对话框中，输入文件名：hfss_diel_res，单击 Save 按钮</p>
+<h3 id="（十三）分析"><a href="#（十三）分析" class="headerlink" title="（十三）分析"></a>（十三）分析</h3><p>一）确认模型</p>
+<p>具体操作步骤：</p>
+<p>在执行求解之前你可以检查模型的有效性，这在运行大型仿真中非常有用选择菜单 HFSS &gt; Validation Check，单击 Close 按钮</p>
+<pre><code>注：要查看错误和警告信息，使用信息管理器。
+</code></pre><p>二）执行仿真求解：</p>
+<p>选择菜单 HFSS &gt; Analyze All</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-14.png" alt="图4-14 仿真执行"><br></div></p>
+<p><center> 图4-14 仿真执行</center></p>
+<p>三）计算数据</p>
+<p>1.查看计算后的数据：</p>
+<p>选择菜单 HFSS &gt; Results &gt; Solution Data</p>
+<p>a.    查看 Profile（概况：内存的使用，计算的时间，剖分的四面体数目） ，单击 Profile 属性页；</p>
+<p>b.    查看 Convergence（收敛性） ，单击 Convergence 属性页；<br>图4-15 Solutions</p>
+<pre><code>注：收敛性的查看方式默认为表格（Table） ，选择绘图（Plot）选项可以通过图形方 式查看收敛性数据。
+</code></pre><p>c.    查看本征模数据，单击 Eigenmode Data 属性页；</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-16.png" alt="图4-16 Eigenmode Data"><br></div></p>
+<p><center> 图4-16 Eigenmode Data</center></p>
+<p>能看到这些模成对出现——它们是衰减模。在本例后面绘出的 结构内部场图中你也能看出这点。</p>
+<p>2.接下来通过单个模查看收敛性，而不是通过 HFSS 的△f 百分比收敛标准来查看。</p>
+<p>选择菜单 HFSS &gt; Results &gt;Create Report，在建立报告（Create Report）窗口：设置报告类型 Report Type：Eigenmode Parameters （本征模参数）显示类型 Display Type：Rectangular （直角），单击 OK 按钮。</p>
+<p>3.在迹线（Traces）窗口：</p>
+<p>a.    设置解算方案 Solution：Setup1：Adaptive1</p>
+<p>b.    单击 Y 属性页</p>
+<p>设置类别 Category：Eigen Modes，Quantity：Mode（1） ，Mode（2） ，…  Mode（6）。使用 CTRL 键进 行多选。Function：Re，单击 Add Trace 按钮，单击 Done 按钮。</p>
+<p>4.下面我们设定颜色使图形曲线更清晰。</p>
+<p>双击 y 轴上的数字，将弹出如下对话框：</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-17.png" alt="图4-17 Y轴设置"><br></div></p>
+<p><center> 图4-17 Y轴设置</center></p>
+<p>单击 Scaling 属性页,勾选‘Scientific Notation’（科学表示法）,在‘Label’文本框写上‘Resonant Frequency [Hz]’。</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-18.png" alt="图4-18 计算结果图"><br></div></p>
+<p><center> 图4-18 计算结果图</center></p>
+<p>正如看到的那样，在第七步后 HFSS 得到的模的频率趋于常数。容易证明模 5 和 6 以及模1 和 2 实际上是同一个模。模 5 在第 4 步和第 6 步之间出现一点小问题是因为模 5 在第 4 步没有描绘好。然而，由于模 5 是衰减模，在第 4 步我们可以通过画出模 6 的场分布图来代替 它，运用我们所学的知识知道衰减模的场是正交的。</p>
+<p>四）场覆盖图</p>
+<p>我们现在有机会看看 HFSS 计算得到的本征模。这个章节将展示 HFSS 拥有的几种 不同的绘图技术。</p>
+<p>1.创建场覆盖图：</p>
+<p>选择模型目录树下的 Planes 中的 Global：XZ 平面,选择菜单 HFSS &gt; Fields &gt; Fields &gt; E &gt; Mag_E,在创建场图（Create Field Plot）窗口：设置解算方案（Solution）：Setup1：LastAdaptive,参量（Quantity） ：Mag_E,范围（In Volume） :All, 单击完成（Done）按钮。</p>
+<p>现在能看到模型在 XZ 平面上的电场幅度分布图。</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19.png" alt="图4-19 模 1：电场幅度分布"><br></div></p>
+<p><center> 图4-19 模 1：电场幅度分布</center></p>
+<p>2.改变激励模</p>
+<p>选择菜单 HFSS &gt; Fields &gt; Edit Sources，在编辑源（Edit Sources）窗口：设置源（Set Source）EigenMode_1,幅度（magnitude）：0，相位（phase）：0；EigenMode_2 幅度（magnitude）1，相位（phase）0 3)    单击 OK 按钮。</p>
+<p>五）XZ 平面上的电场幅度图</p>
+<p>1.下面显示的是 XZ 平面上不同模的电场分布图。</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19-1.png" alt="模 1：电场幅度分布"><br></div></p>
+<p><center> 模 1：电场幅度分布</center></p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19-2
+.png" alt="模 2：电场幅度分布"><br></div></p>
+<p><center> 模 2：电场幅度分布</center></p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19-3
+.png" alt="模 3：电场幅度分布"><br></div></p>
+<p><center> 模 3：电场幅度分布</center></p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19-4.png" alt="模 4：电场幅度分布"><br></div></p>
+<p><center> 模 4：电场幅度分布</center></p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19-5.png" alt="模 5：电场幅度分布"><br></div></p>
+<p><center> 模 5：电场幅度分布</center></p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19-6.png" alt="模 6：电场幅度分布"><br></div></p>
+<p><center> 模 6：电场幅度分布</center></p>
+<p>六）XZ 平面上的磁场幅度图</p>
+<p>1.下面显示的是 XZ 平面上不同模的磁场分布图。</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19-7.png" alt="模 1：磁场幅度分布"><br></div></p>
+<p><center> 模 1：磁场幅度分布</center></p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19-8.png" alt="模 2：磁场幅度分布"><br></div></p>
+<p><center> 模 2：磁场幅度分布</center></p>
+<p>2.HFSS以默认激励（phase=0）给出磁场分布模式，有时看起来并不提供场（取决于设置）。</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19-9.png" alt="模 3：磁场幅度分布"><br></div></p>
+<p><center> 模 3：磁场幅度分布 </center></p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19-10.png" alt="模 4：磁场幅度分布"><br></div></p>
+<p><center> 模 4：磁场幅度分布 </center></p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19-11.png" alt="模 5：磁场幅度分布"><br></div></p>
+<p><center> 模 5：磁场幅度分布 </center>              </p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-19-12.png" alt="模 6：磁场幅度分布"><br></div></p>
+<p><center> 模 6：磁场幅度分布 </center></p>
+<p>七）在自定义剖面上绘制场图</p>
+<p>可以在自定义剖面上绘制场图，下面将演示如何操作：</p>
+<p>1.创建一个包含想要的剖面的新坐标系统</p>
+<p>1)    选择菜单 3D Modeler &gt; Coordinate System &gt;Create &gt;Relative CS &gt;Both</p>
+<p>2)    在坐标输入区输入数据，把原点设定在谐振器中心：</p>
+<pre><code>X: 0.0, Y:0.0, Z: 5.0/2, 按 Enter 键结束
+</code></pre><p>3)    设置 x 轴的位置</p>
+<pre><code>X: 5.0, Y:0.0, Z: -5.0/2, 按 Enter 键结束
+</code></pre><p>4)    设置 XY 平面（注意在坐标栏选择绝对参考系）</p>
+<pre><code>X: 0.0, Y:-5.0, Z: 0.0, 按 Enter 键结束
+</code></pre><p><div align="center"><br><img src="/12/hfss-xiezhen/4-20.png" alt="图 4-20"><br></div></p>
+<p><center> 图4-20</center></p>
+<p>5)    你现在能看到一个名为 RelativeCS1 的新坐标系。可以在模型目录树下的Planes 中选择这个坐标系中的平面作为剖面。</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-21.png" alt="图 4-21"><br></div></p>
+<p><center> 图4-21</center></p>
+<pre><code>X: 0.0, Y:5.0, Z: 0.0,
+</code></pre><p>按 Enter 键结束</p>
+<p>选择 RelativeCS1：XY。</p>
+<p>6)    选择 HFSS &gt; Fields &gt; Fields &gt;H &gt;Mag_H，设置相位为 180 度，其余默认。 对 Vector_H 进行相同的操作。</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/4-22.png" alt="图 4-22"><br></div></p>
+<p><center> 图4-22</center></p>
+<p>八）优化设置-参扫</p>
+<p>1.下面我们来看看改变腔体高度HWall时，谐振频率如何变化。使用HFSS优化。</p>
+<p>2.由于前面我们已经给结构设置了参数HWall，下面只要创建一个参数扫描。然后 我们可以产生模变化的趋势线。</p>
+<p>九）增加一个参数扫描</p>
+<p>选择菜单 HFSS &gt; Optimetrics Analysis&gt; Add parametric，在扫描分析（Sweep Analysis）窗口：点击 Sweep Definitions 属性页：单击 Add 按钮。</p>
+<p>在 Add/Edit Sweep 对话框：设置变量 Variable：HWall，选择 Select Linear Step，Start：6mm，Stop：15mm，Step：1mm，单击 Add&gt;&gt;按钮，单击 OK 按钮。</p>
+<p>点击 General 属性页，勾选‘Save Fields’复选项，单击 OK 按钮。</p>
+<h3 id="（十四）保存工程"><a href="#（十四）保存工程" class="headerlink" title="（十四）保存工程"></a>（十四）保存工程</h3><p>在 HFSS 窗口，选择菜单 File &gt; Save .</p>
+<h2 id="五、仿真结果及分析"><a href="#五、仿真结果及分析" class="headerlink" title="五、仿真结果及分析"></a>五、仿真结果及分析</h2><h3 id="（一）执行仿真求解："><a href="#（一）执行仿真求解：" class="headerlink" title="（一）执行仿真求解："></a>（一）执行仿真求解：</h3><p>选择菜单 HFSS &gt; Analyze</p>
+<h3 id="（二）创建报告"><a href="#（二）创建报告" class="headerlink" title="（二）创建报告"></a>（二）创建报告</h3><p>选择菜单 HFSS &gt; Results &gt; Create Report，在建立报告（Create Report）窗口，设置报告类型 Report Type：Eigenmode Parameters （本征模参数），显示类型 Display Type：Rectangular （直角），单击 OK 按钮。</p>
+<p>在迹线（Traces）窗口，设置解算方案 Solution：Setup1：LastAdaptive<br>单击 Sweep 属性页，单击 Sweep Design and Project Variable Values 选项，使扫描参数可见而不仅仅是名义上的设计，确定HWall出现在表格中Name栏顶部。</p>
+<p>单击 Y 属性页，设置类别 Category：Eigen Modes，参量 Quantity：Mode（1） ，Mode（2） ，… Mode（6）.Function：Re，单击 Add Trace 按钮，单击 Done 按钮。可以得到如下图表所示结果，参考书上的结果见下图。</p>
+<p><div align="center"><br><img src="/12/hfss-xiezhen/5-1.png" alt="图 5-1"><br></div></p>
+<p><center> 图5-1</center></p>
+<h3 id="（三）模随HWall变化的参量研究"><a href="#（三）模随HWall变化的参量研究" class="headerlink" title="（三）模随HWall变化的参量研究"></a>（三）模随HWall变化的参量研究</h3><p>从上面模的研究看，结果在定性上看起来是相同的。但是被认为是TM01δ的‘Mode1’看起来朝4.92GHz接近而不是在HWall=15mm时升至 5.72GHz。这似乎是个错误的结果，但事实上不是。这是由于下面的情况引起的：</p>
+<p>HFSS 在给模排序时，总是把最低的谐振频率作为‘Mode  1’，次低的谐振频率总是‘Mode 2’ ，等等。</p>
+<p>因此与结果相关联时要把这个情况考虑在内，看下面</p>
+<p>1.TE01δ模在Hwall=12mm之前被表示成Mode 4，在这之后被表示成Mode 3</p>
+<p>2.TM01δ模在HWall=8mm之前被表示成Mode 1，然后直到 12mm被表示成Mode 3，最后直到16mm被表示成Mode 4</p>
+<p>3.混合模 HEM，在 HWall=8mm 之前被表示成 Mode 3，然后是 Mode 1/Mode 2（将衰减）</p>
+<p>如果我们要不对照原参考书得到上面的结论，可以通过 HFSS 画出的场图来得出是 哪种模。但是当你发现这是一个多么简单容易的问题时，就不需要在整个模型范围或部分 模型范围的某个平面上绘制电场和/或磁场幅度分布图了。</p>
+<h2 id="六、实践心得"><a href="#六、实践心得" class="headerlink" title="六、实践心得"></a>六、实践心得</h2><p>通过本次实践，初步了解了HFSS这个软件的使用步骤，以及对一些器件的设计仿真过程。</p>
+<p>在实践过程中，感受最深的就是遇到问题看说明书。对于这个以前从来没有接触过的软件，学习的最好资料莫过于官方的manual，即附带的软件说明书。在设计和仿真时，许多问题在网上难以获得现成的解决方案，这个时候参考官方的手册是个很好的选择。</p>
+<p>还有一个感悟就是要加强英文水平的提升，从软件本身到设计手册，全部都是英文，所以掌握一个软件，如果阅读英文文献的能力不达标还是有点困难的。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qrcode.jpg" alt="cxjiang wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.JPG" alt="cxjiang WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.JPG" alt="cxjiang Alipay">
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      cxjiang
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="cxjiang.top/2017/01/12/hfss-xiezhen/" title="基于HFSS的介质谐振器的设计与仿真">cxjiang.top/2017/01/12/hfss-xiezhen/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HFSS/" rel="tag"># HFSS</a>
+          
+            <a href="/tags/介质谐振器/" rel="tag"># 介质谐振器</a>
+          
+            <a href="/tags/实践案例教学/" rel="tag"># 实践案例教学</a>
+          
+            <a href="/tags/设计报告/" rel="tag"># 设计报告</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/01/10/notebook/" rel="next" title="“关于大学生学习笔记的问卷调查”总结">
+                <i class="fa fa-chevron-left"></i> “关于大学生学习笔记的问卷调查”总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/13/8000-1/" rel="prev" title="刘一男带你狂撸8000词汇-公益课程（一）">
+                刘一男带你狂撸8000词汇-公益课程（一） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="cxjiang">
+          <p class="site-author-name" itemprop="name">cxjiang</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">62</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">81</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="mailto:&#106;&#99;&#120;&#55;&#48;&#49;&#48;&#48;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109" target="_blank" title="Email">
+                  
+                    <i class="fa fa-fw fa-envelope-o"></i>
+                  
+                  Email
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/1699473805/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/jcx70100" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/u/340c09a97d3a" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-book"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://onedrive.live.com/?authkey=%21APdZwNrXUE7iLSY&id=CC9BE3F0ECB7164%219399&cid=0CC9BE3F0ECB7164" target="_blank" title="Files分享">
+                  
+                    <i class="fa fa-fw fa-share-alt"></i>
+                  
+                  Files分享
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons">
+            </a>
+          </div>
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.czu.cn/" title="CIT" target="_blank">CIT</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.wmakh.com/" title="WMA&KH" target="_blank">WMA&KH</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、设计要求"><span class="nav-number">1.</span> <span class="nav-text">一、设计要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、设计方案"><span class="nav-number">2.</span> <span class="nav-text">二、设计方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、设计原理"><span class="nav-number">3.</span> <span class="nav-text">三、设计原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、设计步骤及内容"><span class="nav-number">4.</span> <span class="nav-text">四、设计步骤及内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（一）运行-Ansoft-HFSS"><span class="nav-number">4.1.</span> <span class="nav-text">（一）运行 Ansoft HFSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（二）设置工具选项"><span class="nav-number">4.2.</span> <span class="nav-text">（二）设置工具选项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（三）新建一个工程"><span class="nav-number">4.3.</span> <span class="nav-text">（三）新建一个工程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（四）设置解决方案类型"><span class="nav-number">4.4.</span> <span class="nav-text">（四）设置解决方案类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（五）创建三维模型"><span class="nav-number">4.5.</span> <span class="nav-text">（五）创建三维模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（六）创建一个新的材质并设为置默认材质"><span class="nav-number">4.6.</span> <span class="nav-text">（六）创建一个新的材质并设为置默认材质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（七）创建基层"><span class="nav-number">4.7.</span> <span class="nav-text">（七）创建基层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（八）设置默认材质"><span class="nav-number">4.8.</span> <span class="nav-text">（八）设置默认材质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（九）创建介质谐振器"><span class="nav-number">4.9.</span> <span class="nav-text">（九）创建介质谐振器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#（十）设置边界条件"><span class="nav-number">4.9.1.</span> <span class="nav-text">（十）设置边界条件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（十一）分析设置"><span class="nav-number">4.10.</span> <span class="nav-text">（十一）分析设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（十二）保存工程"><span class="nav-number">4.11.</span> <span class="nav-text">（十二）保存工程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（十三）分析"><span class="nav-number">4.12.</span> <span class="nav-text">（十三）分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（十四）保存工程"><span class="nav-number">4.13.</span> <span class="nav-text">（十四）保存工程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、仿真结果及分析"><span class="nav-number">5.</span> <span class="nav-text">五、仿真结果及分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（一）执行仿真求解："><span class="nav-number">5.1.</span> <span class="nav-text">（一）执行仿真求解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（二）创建报告"><span class="nav-number">5.2.</span> <span class="nav-text">（二）创建报告</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（三）模随HWall变化的参量研究"><span class="nav-number">5.3.</span> <span class="nav-text">（三）模随HWall变化的参量研究</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、实践心得"><span class="nav-number">6.</span> <span class="nav-text">六、实践心得</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+
+
+<div class="copyright">
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-star">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">cxjiang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+
+
+<div>
+<span id="busuanzi_container_site_pv">
+    Total visited <span id="busuanzi_value_site_pv"></span> times
+</span>
+</div>
+
+<div>
+<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+</div>
+
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://tingfeng.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'cxjiang.top/2017/01/12/hfss-xiezhen/';
+          this.page.identifier = '2017/01/12/hfss-xiezhen/';
+          this.page.title = '基于HFSS的介质谐振器的设计与仿真';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://tingfeng.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("wg8YqRpHsKpFeakal2Auq3Gp-gzGzoHsz", "WDfyk7eOEE9M6815p1xb9Hle");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+
+  
+
+</body>
+</html>

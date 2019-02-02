@@ -1,0 +1,1808 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="scfRJ52SiOY1zUS3SOPOR7QNjHQqu6Mba61qAA89oOQ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="气相色谱,现代仪器">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="听风 | Thinking" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png?v=5.1.0">
+
+
+
+
+
+
+<meta name="description" content="坑爹的现代仪器分析，老师不给复习题，只好自己整理了，下辈子绝对不选这门课，太没条理了！！！">
+<meta name="keywords" content="气相色谱,现代仪器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="气相色谱法原理-现代仪器分析复习整理">
+<meta property="og:url" content="cxjiang.top/2017/12/29/GC-principle-shanghaitech/index.html">
+<meta property="og:site_name" content="听风 | Thinking">
+<meta property="og:description" content="坑爹的现代仪器分析，老师不给复习题，只好自己整理了，下辈子绝对不选这门课，太没条理了！！！">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 13.54.26.png">
+<meta property="og:image" content="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 14.51.22.png">
+<meta property="og:image" content="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 15.45.34.png">
+<meta property="og:image" content="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 15.56.30.png">
+<meta property="og:image" content="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 16.07.27.png">
+<meta property="og:image" content="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 16.24.45.png">
+<meta property="og:image" content="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 16.26.31.png">
+<meta property="og:image" content="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 16.41.41.png">
+<meta property="og:image" content="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 16.43.34.png">
+<meta property="og:image" content="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 16.53.29.png">
+<meta property="og:image" content="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 18.02.25.png">
+<meta property="og:updated_time" content="2017-12-29T10:46:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="气相色谱法原理-现代仪器分析复习整理">
+<meta name="twitter:description" content="坑爹的现代仪器分析，老师不给复习题，只好自己整理了，下辈子绝对不选这门课，太没条理了！！！">
+<meta name="twitter:image" content="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 13.54.26.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="cxjiang.top/2017/12/29/GC-principle-shanghaitech/">
+
+
+
+
+
+  <title> 气相色谱法原理-现代仪器分析复习整理 | 听风 | Thinking </title>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-97192818-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f6d6670729f1a15754709bb81163a413";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">听风 | Thinking</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">The wheel turns,nothing is ever new.</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="cxjiang.top/2017/12/29/GC-principle-shanghaitech/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cxjiang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="听风 | Thinking">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                气相色谱法原理-现代仪器分析复习整理
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-29T18:29:36+08:00">
+                2017-12-29
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-29T18:46:28+08:00">
+                2017-12-29
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/术业专攻/" itemprop="url" rel="index">
+                    <span itemprop="name">术业专攻</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/12/29/GC-principle-shanghaitech/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/12/29/GC-principle-shanghaitech/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/12/29/GC-principle-shanghaitech/" class="leancloud_visitors" data-flag-title="气相色谱法原理-现代仪器分析复习整理">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  坑爹的现代仪器分析，老师不给复习题，只好自己整理了，下辈子绝对不选这门课，太没条理了！！！
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="气相色谱法"><a href="#气相色谱法" class="headerlink" title="气相色谱法"></a>气相色谱法</h1><h2 id="气相色谱法的基本原理"><a href="#气相色谱法的基本原理" class="headerlink" title="气相色谱法的基本原理"></a>气相色谱法的基本原理</h2><h3 id="气相色谱仪的结构组成"><a href="#气相色谱仪的结构组成" class="headerlink" title="气相色谱仪的结构组成"></a>气相色谱仪的结构组成</h3><p><img src="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 13.54.26.png" alt="Screen Shot 2017-12-29 at 13.54.26"></p>
+<ul>
+<li>供气系统 carry gas; flow or pressure regulator</li>
+<li>进样器 injection port /splitter</li>
+<li>分离柱 column（分离系统）</li>
+<li>温控系统 temperature control system</li>
+<li>检测器 detector</li>
+<li>数据处理系统 data process system</li>
+</ul>
+<h3 id="各单元功能"><a href="#各单元功能" class="headerlink" title="各单元功能"></a>各单元功能</h3><h4 id="供气系统"><a href="#供气系统" class="headerlink" title="供气系统"></a>供气系统</h4><ul>
+<li>它由气源、减压阀、气体净化装置、气压和流量调节控制装置组成，提供载气或辅助气体以及检测器所需要的气体。<blockquote>
+<p>有些检测器需要可燃气体: 如氢火焰检测器需要氢气,空气和氧气.<br>载气可以是氮气、氦气或者是氢气，必须是高纯度。</p>
+<ul>
+<li>载气的作用：1.将样品送入色谱柱 2.为检测器提供合适的基体</li>
+<li>载气纯度要高：1.为了减少背景噪声 2.保护色谱柱以及检测器 3.减小杂质带来的污染</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>因此需要选用净化器(又叫捕集阱)对气体进行净化，同时还要对净化器进行维护，一个不进行维护的净化器会失效，并成为一个污染源。</p>
+</blockquote>
+<ul>
+<li>载气对分离效率的影响<br>气相色谱流动相（载气）不能改变分离选择性，但可以用来提高柱效。</li>
+<li>载气作为检测介质对检测器的选择</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">检测器</th>
+<th style="text-align:left">载气</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">热导检测器TCD-thermal conductivity detector</td>
+<td style="text-align:left">氦气</td>
+</tr>
+<tr>
+<td style="text-align:left">火焰离子化检测器FID-flame ionization detector</td>
+<td style="text-align:left">氦气、氮气</td>
+</tr>
+<tr>
+<td style="text-align:left">电子捕获检测器ECD-electron capture detector</td>
+<td style="text-align:left">无水氮气（very dry）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="进样技术"><a href="#进样技术" class="headerlink" title="进样技术"></a>进样技术</h4><ul>
+<li>液体样品的进样一直是GC的一个问题,尤其是对于毛细管GC</li>
+<li><p>进样装置的要求</p>
+<ul>
+<li>不能引起柱过载</li>
+<li>准确、可重复地进样</li>
+<li>不能因沸点、极性差异、降解、吸附和进样歧视引起进样损失</li>
+<li>可同时用于痕量和浓度较大的样品</li>
+</ul>
+</li>
+<li><p>进样器分类：分流、无分流、柱上进样和程序升温蒸发进样(PTV)</p>
+<ul>
+<li><p>分流进样器-Split injection</p>
+<ul>
+<li>毛细管柱的载样量非常小, 采用分流进样的方式避免进样过载</li>
+<li>载气从汽化室上端引入后，一部分用于吹扫隔垫和溢出的样品 蒸汽，大部分进入汽化室。</li>
+<li>样品进入内汽化室后被迅速气化，样品蒸汽与流经内衬管的载气混合并被稀释。只有一小部分随载气进入色谱柱, 大部分样品进入分流管排出。</li>
+<li>分流比计算：通过柱流和分流比计算出进入塔的物料数量与通过分裂损失的量之比。<img src="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 14.51.22.png" alt="Screen Shot 2017-12-29 at 14.51.22"></li>
+<li><p>优缺点</p>
+<ul>
+<li><p>优点</p>
+<blockquote>
+<p>结构简单，分流比易控制.<br>液体样品快速气化,使进样区带窄,保证细内径柱获得高的分离柱效,提高了对复杂样品的分析能力.<br>当样品中有难挥发的重组分时, 难挥发的样品会留在气化室中, 不会污染色谱柱, 但会引起峰脱尾.</p>
+</blockquote>
+</li>
+<li>缺点<blockquote>
+<p>易造成进样歧视, 即低沸点的溶质比高沸点的溶质进样更多.<br>载气消耗量大<br>采用蒸发进样, 热稳定性差的样品易发生分解.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>无分流进样</p>
+<ul>
+<li>无分流是指将样品全部注入毛细管柱中,无需分流，适合于痕量样品的分析。它可以直接在分流进样器上进行，只需要关闭排出废气的电磁阀即可。</li>
+<li>无分流进样要使用耐溶剂冲洗的交联毛细管柱.</li>
+<li>大量溶剂进入色谱柱后, 溶剂沿柱内壁延伸展开一段长度,称为溢流区, 会引起峰扩展.</li>
+<li>如果溶剂与固定相极性相近, 则溢流区较小. 因此要选用与固定相极性相近的溶剂溶解样品.</li>
+<li><p>无分流进样装置</p>
+<ul>
+<li><p>无分流进样的进样装置与分流进样通用</p>
+<blockquote>
+<p>如果用分流进样, 只需将分流阀关闭即可. 样品气化后,在10-40秒(无分流时间)后大部分的样品进入毛细管, 随后打开分流管快速吹洗汽化室<br>采用合适的初始化温度就可以实现样品的浓缩.<br>样品的浓缩过程包含两种机理：冷阱浓缩和溶剂效应浓缩 （cold trapping and solvent effect)<br>注：如果在柱头不对样品进行重新浓缩, 将产生10倍峰展宽.</p>
+</blockquote>
+</li>
+<li><p>冷阱浓缩和溶剂效应浓缩</p>
+<ul>
+<li><p>冷阱浓缩</p>
+<blockquote>
+<p>在离柱头几厘米的地方, 设置一个负的温度梯度, 即从气化室250度降到柱温箱的40度。 样品组分中的重组分（高沸点）被冷冻在很窄的区域．</p>
+</blockquote>
+</li>
+<li>与溶剂的沸点相近的轻组份（低沸点）的浓缩是通过溶剂效应实现的．<blockquote>
+<p>当柱的初始温度比溶剂的沸点低20度左右时，低沸点组分同溶剂一同冷凝在毛细管柱头，形成液膜．在载气的吹扫下，溶剂从后面开始挥发，同时样品随着溶剂液膜的不断挥发开始浓缩．最后被浓缩至很窄的区带内．<br><img src="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 15.45.34.png" alt="Screen Shot 2017-12-29 at 15.45.34 -w500"></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>无分流进样对样品溶剂的要求</p>
+<ul>
+<li>溶剂效应是基于在色谱柱头形成均匀的溶剂液膜．</li>
+<li>只有 样品溶剂极性与固定相极性相匹配 才能获得满意的溶剂效应．否 则，当进样体积大于１－２µl时会形成液滴。每个液滴会产生自己的 溶剂效应，从而引起峰扩展和峰裂分。这些问题主要影响到低沸点的 组分。</li>
+<li>样品溶剂与固定相在极性上的不匹配引起的问题可以由 保留间隙 解决．</li>
+</ul>
+</li>
+<li><p>保留间隙Retention Gap</p>
+<blockquote>
+<p>保留间隙是1-10m的一段经过去活处理但没有固定相的毛细管, 因此它对任何溶剂和样品都无保留.<br>大多数情况下，保留间隙或保护柱的直径应与色谱柱相同,保护柱和保留间隙实质上是同一个东西，只是它们的使用目 的不同。<br>样品中含有的不挥发性残留物会沉积在保护柱上，避免了对色谱柱的污染。如果出现峰形变差，表明保护柱需进行修 整或更换。</p>
+<ul>
+<li>保留间隙的作用<ul>
+<li>改善柱头大体积进样、不分流进样时因溶剂与固定相极性不匹配引起的峰形裂分</li>
+<li>通过溶剂聚焦和固定相聚焦使区带变窄</li>
+<li>作为保护柱避免非挥发的组分进入色谱柱</li>
+<li>能够使细口径毛细管柱与自动进样器匹配</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>柱上进样</p>
+<ul>
+<li>柱上进样是在进样器初始温度低于溶剂沸点时用细的进样针将液体样品直 接注入色谱柱中. 样品溶液在进样后不立即气化, 而是随着进样后启动的 柱温程序升温,选择性地挥发样品中的溶质.</li>
+<li>进样器的温度必须低于溶剂沸点20到10度之间，使进样后的样品溶液在柱 上形成一层薄的液膜，使样品组分通过溶剂效应浓缩．如果温度过高将会产生不连续液膜，形成峰分 裂．</li>
+<li>太高的温度将导致样品在进样针中发生挥发．如果进样体积大于２µl, 要使用保留间隙．</li>
+<li>进样针必须插入毛细管柱中，所以柱的直径必须大，250 -320µm.</li>
+<li><p>与无分流进样一样，能否形成均匀液膜取决于溶剂与固定相在极性上的匹配．这对溶剂效应的浓缩效果起到非常重要的影响。与无分流进样不同，这还将影响整个分离（前者只影响低沸点组分）．<br><img src="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 15.56.30.png" alt="Screen Shot 2017-12-29 at 15.56.30"></p>
+</li>
+<li><p>柱上进样的优缺点</p>
+<ul>
+<li><p>优点</p>
+<ul>
+<li>进样简单．</li>
+<li>但是由于全部的样品都上载到柱上，因而色谱柱极易被样品基质污染．必须采用保留间隙来延长柱寿命．与无分流进样一样，需要谨慎选择柱温箱的初始温度．</li>
+<li>非常适合高沸点组分的分析．</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li>在常规分析中没有得到广泛的接受，稳定性较差．</li>
+<li>对细内径毛细管柱,容易发生样品过载.</li>
+<li>难以自动化</li>
+<li>难挥发的组分会聚集在柱头损坏柱子.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>程序升温蒸发器PTV</p>
+<blockquote>
+<p>程序升温蒸发器 Programmed temperature vaporizer (PTV)， PTV综合了分流，无分流和柱上进样的优点, 使它成为最为通用的ＧＣ 进样技术.<br>PTV与一般的分流和无分流进样器相似， 核心部分也是内衬管．与分流／无分流<br>进样不同的是PTV具有可控制温度的内衬管，可以迅速升温和冷却。<br><img src="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 16.07.27.png" alt="Screen Shot 2017-12-29 at 16.07.27"><br>载气通过无垫片进样头进入内衬管的顶部，经过分流的载气从内衬管的底部进 入色谱柱．在分流管末端有一个电磁阀 可以在分流与无分流之间转换．</p>
+</blockquote>
+<ul>
+<li><p>PTV的工作方式</p>
+<ol>
+<li>热分流进样：分流阀打开．与常规的分流进样相同．</li>
+<li>冷分流进样：分流阀打开，样品注入冷的内衬管后迅速加 热．</li>
+<li>热无分流进样：进样时保持加热内衬管品，同时关闭分流 出口，分流时间之后打开分流阀．与常规的无分流进样相 同．</li>
+<li>冷无分流进样：分流阀关闭，样品注入冷的内衬管后，迅 速加热．分流时间后，打开分流阀．</li>
+<li>溶剂排空(solvent vent)：预先打开分流阀，样品注入冷的 内衬管．在加热内衬管之前，在较低温度下将溶剂排 出．等溶剂完全排出后，关闭分流阀并迅速加热内衬管．</li>
+<li>柱上进样： 与常规的柱上进样相同．</li>
+</ol>
+</li>
+<li><p>PTV的优点</p>
+<ul>
+<li>由于采用冷进样（此进样技术为冷进样系统或冷程序化进样器），ＰＴＶ可以将<em>因沸点差异引起的进样歧 视可以被降到最低．</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>总结</p>
+<ul>
+<li>（热）分流进样 ：因为进样装置简单成为最常用的GC进样技术，适合于热稳定的浓度高于50 ppm 的样品的定量分析．定量分析时需要注意，对高沸点的组分存在进样歧视．</li>
+<li>（热）无分流进样：适合于组分浓度小于50 ppm的样品的分析．但是热分解，热歧视，难以优化．</li>
+<li>（冷）柱上进样 ：在理论上是最为理想的进样技术．消除了热分解和进样歧视．适合于热不稳定样品的分析，和以定量为主的分析．适用于较宽的浓度范围，但是进样体积较小．毛细管柱也容易被污染．</li>
+</ul>
+</li>
+</ul>
+<h4 id="温度控制系统"><a href="#温度控制系统" class="headerlink" title="温度控制系统"></a>温度控制系统</h4><ul>
+<li><p>温度控制系统主要指对色谱柱箱、气化室、检测器三处的温度控制，直接影响进样、色谱柱的分离选择性、检测器的检测灵敏度和稳定性。</p>
+</li>
+<li><p>色谱柱的温度控制方式有恒温和程序升温二种，对于沸点范围很宽的混合物，采用程序升温法进行分析。</p>
+<blockquote>
+<p>程序升温指在一个分析周期内柱温随时间由低温向高温作线性或非线性变化，以达到用最短时间获得最佳分离的目的。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="气相色谱柱"><a href="#气相色谱柱" class="headerlink" title="气相色谱柱"></a>气相色谱柱</h4><p>分类：填充柱、毛细管柱</p>
+<ul>
+<li><p>填充柱（仍在应用, 解决大约20%的气体分析问题）<br>直径一般2-4mm，长度1-4m的不锈钢或耐热玻璃管，填上合适的填料。填充柱的形状有U型和螺旋型二种。</p>
+<blockquote>
+<p>优点：进样方式简单，进样精确可靠，定量分析时具有更高的准确度和精确度。<br>缺点：分离柱效不高.</p>
+</blockquote>
+<ul>
+<li><p>玻璃柱</p>
+<blockquote>
+<p>非常适合热稳定性物质的分离，但是玻璃柱的耐压有限，玻璃柱需要用相应的硅烷化试剂处理以去除表面的硅羟基(它可以成为催化位点或因吸附导致不对称峰)。</p>
+</blockquote>
+</li>
+<li>不锈钢柱<blockquote>
+<p>能够耐压，加工方便，但有一些分析物与热的金属管接触后不稳定。不锈钢金属柱需要稀释的盐酸冲洗柱子，然后用水、甲醇、丙酮、二氯甲烷、正己烷冲洗拉制金属管时残留的润滑剂和锈蚀。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>开管柱的类型open tubular columns</p>
+<ul>
+<li><p>涂壁开管柱（wall-coated open tubular columns(WCOT)）(目前最为流行)</p>
+<blockquote>
+<p>WCOT柱液膜厚度一般在1微米，可调节。</p>
+</blockquote>
+</li>
+<li>多孔层开管柱（porous layer open tubes(PLOT)columns）<blockquote>
+<p>PLOT 柱多用于气体分析和低分子量的碳氢化合物<br>PLOT柱直径范围在 250-530 μm</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>毛细管柱 capillary column</p>
+<ul>
+<li>毛细管柱已成为气相色谱柱的主流，分为涂层柱和多孔层柱。</li>
+<li>最初毛细管材料有不锈钢，玻璃或石英。但现在几乎全都是熔融石英毛细管柱.</li>
+<li>毛细管色谱柱渗透性好，传质阻力小，因而柱子可以做到几十米长。与填充柱相比，其分离效率高很多（理论塔板数可达10^6 ）、分析速度快、样品用量小；但柱容量低。</li>
+</ul>
+<ul>
+<li><p>涂柱法</p>
+<ul>
+<li><p>动态涂柱法 The dynamic coating procedure for an open tubular column</p>
+<blockquote>
+<p>动态法制柱速度快，但由于很难控制液膜均匀程度，因此柱效比静态法制的的柱子的柱效低．</p>
+</blockquote>
+</li>
+<li>静态涂柱法The static method for coating open tubular columns<blockquote>
+<p>静态法制的柱效比动态法的高，重现性也好．</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="检测器"><a href="#检测器" class="headerlink" title="检测器"></a>检测器</h4><ul>
+<li><p>GC检测器分类</p>
+<ul>
+<li><p>按检测器适用性分为</p>
+<ul>
+<li><p>通用型检测器</p>
+<blockquote>
+<p>检测器对流出色谱柱的每个组分都能给出信号,而且各个组分的信号响应因子差别不大。如热导检测器, 火焰离子化检测器.</p>
+</blockquote>
+</li>
+<li>选择型检测器<blockquote>
+<p>检测器仅对特定的组分产生响应信号. 如氮磷检测器.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>根据样品在检测时是否遭到破坏又分为</p>
+<ul>
+<li>破坏型检测器</li>
+<li>非破坏型检测器</li>
+</ul>
+</li>
+<li><p>按检测器的信号响应类型分</p>
+<ul>
+<li><p>浓度型检测器</p>
+<blockquote>
+<p>检测器响应信号与样品组分在移动相中的 浓度成比例。如热导检测器。</p>
+</blockquote>
+</li>
+<li>质量型检测器<blockquote>
+<p>检测器的响应信号和单位时间内进入检测器的物质的数量成正比。如火焰离子化检测器和火焰光度 检测器等.</p>
+</blockquote>
+</li>
+<li>流量对这两种检测器的影响<ul>
+<li>对于浓度型，流动的增加导致峰面积减小，但峰高保持不变。</li>
+<li>对于质量流量类型，流量的增加导致峰值高度的增加，但峰值区域保持不变。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>理想的ＧＣ检测器</p>
+<ol>
+<li>高的检测灵敏度</li>
+<li>稳定性好、响应时间短</li>
+<li>线性范围广 : 线性范围在5个数量级</li>
+<li>温度范围宽：从 25 到 400 °C</li>
+<li>响应时间与流动相的性质无关, 也不受流速, 温度和压力变化的影响</li>
+<li>易使用</li>
+<li>对所有溶质的响应相同</li>
+<li><p>不会破坏样品</p>
+<blockquote>
+<p>还没有任何检测器能够满足这些特性</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><p>检测器的参数</p>
+<ul>
+<li>灵敏度: 通过检测器的溶质质最或浓度变化时引起的响应变化率.</li>
+<li>基线噪音: 无样品通过检测器时, 检测器基线的信号</li>
+<li>检测限: 在2倍信噪比时能够检测到的最低溶质的量</li>
+<li>线性范围: 信号与溶质浓度呈线性响应的溶质的浓度范围, 最低点为2倍信噪比, 最高点为偏离线性5%时的溶质浓度.</li>
+<li>时间常数: 检测器检测到样品色谱峰全部信号的63%时所用的时间. 色谱峰越窄, 时间常数越小.</li>
+</ul>
+</li>
+<li><p>参数解释</p>
+<ul>
+<li><p>时间常数</p>
+<blockquote>
+<p>时间常数也叫响应时间（response time），是指检测器对组分浓度变化时响应的快慢程度。<br>组分进入检测器达到最高响应63%的电信号所经过的时间，为该检测器 的响应时间（t）即为系统对输出信号的滞后时间。一般都小于0.5s，此 时，检测器引起峰形失真小于1%。<br>时间常数过大会使组分峰变宽，变形失真； 过小则会提高噪声。</p>
+</blockquote>
+</li>
+<li><p>线性范围   </p>
+<blockquote>
+<p>检测器有两个响应范围：<br>动态响应范围（ Dynamic Range ） :能够引起检测器信号变化的浓度范围，最低点是达到两倍信号噪音比时的浓度，最高限为浓度增大时信号不再增加的浓度。动态范围比线性范围大。<br>线性范围 (Linear range) :能使检测信号与溶质浓度呈线性关系的浓度范围<br><img src="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 16.24.45.png" alt="Screen Shot 2017-12-29 at 16.24.45"></p>
+</blockquote>
+</li>
+<li><p>信噪比</p>
+<blockquote>
+<p>检测器的一个特征参数．<br>用于表明在基线噪音中的某一峰是样品组分的可能性有多大．如信噪比为２时，信号峰是样品组分的可能性有95%. 测定信噪比所用的噪音应该包含短期和长期噪音．<br>栗子：<br>在Ｌ１和Ｌ２两线之间包含了正负噪音，过两线中点的线为基线Ｃ．对于峰２，从Ｃ开始到峰最高点的距离为峰高．对于带有噪音的峰１， 峰高应该是Ｃ到 Ｌ３和Ｌ４中间线Ｄ１的距离．<br><img src="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 16.26.31.png" alt="Screen Shot 2017-12-29 at 16.26.31"></p>
+</blockquote>
+</li>
+<li><p>灵敏度</p>
+<blockquote>
+<p>区分浓度微小差异的能力，校准曲线的斜率<br>灵敏度是指通过检测器的溶质的质量或浓度变化时引起的 检测器响应值的变化。本质上, 灵敏度是校正曲线的斜率. 单位为mV/pg．</p>
+</blockquote>
+</li>
+<li><p>检测限</p>
+<ul>
+<li>检测限LOQ：达到10倍噪音信号时的进入检测器的组分质量或浓度</li>
+<li>检测限LOD：达到3倍噪音信号时的进入检测器的组分质量或浓度<blockquote>
+<p>检测器的线性范围与所采用的物质有关，因此所测定的ＬＯＤ必须指明特定的物质</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>各种检测器</p>
+<ul>
+<li><p>热导检测器Thermal conductivity detector</p>
+<blockquote>
+<p>通过纯载气和载气+溶质混合气之间热导系数的差异实现检测</p>
+</blockquote>
+<ul>
+<li><p>热导池的结构和检测电路</p>
+<blockquote>
+<p>TCD可分双臂和四臂热导池两种。由于四臂热导池热丝的阻值比双臂热导池增加一倍，故灵敏度也提高一倍。目前仪器中都采用四根金属丝组成的四臂热导池。其中二臂为参比臂，另二臂为测量臂，将参比臂和测量臂接入惠斯通电桥。</p>
+</blockquote>
+</li>
+<li><p>载气的选择</p>
+<ul>
+<li>载气与溶质热导系数相差愈大，则灵敏度愈高。故一般选择热导系数大的氢气或氦气作载气。</li>
+<li>载气纯度影响灵敏度和峰形。</li>
+<li>ＴＣＤ对流速波动很敏感，峰面积的响应值反比于载气流速．因此要求载气流速必须保持恒定，否则会引起基线噪音和漂移增大．</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Flame ionization detector FID 火焰离子化检测器</p>
+<ul>
+<li><p>FID检测有机化合物在氢火焰中燃烧时产生的离子，且产生的离子的数量与摩尔响应因子（molar response factors）成正比</p>
+<blockquote>
+<p>摩尔响应因子等于分子中的碳原子数</p>
+</blockquote>
+</li>
+<li><p>应用广泛，优点如下：</p>
+<ul>
+<li>FID的获取和操作成本低</li>
+<li>维护要求低，除了清洗或更换FID喷射器，无需其他维护操作</li>
+<li>结构坚固</li>
+<li>线性响应范围很宽</li>
+</ul>
+</li>
+<li><p>火焰离子化检测器结构</p>
+<blockquote>
+<p>从毛细管柱流出的气体与从柱外侧流入 的氢气及从最外层流入的空气在喷嘴位 置混合，用点火灯丝点燃氢火焰<br>极化极和收集极通过高电阻、基流补偿 和50~350V的直流电源组成检测电路， 测量氢焰中产生的带正电荷的离子。<br><img src="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 16.41.41.png" alt="Screen Shot 2017-12-29 at 16.41.41-c"></p>
+</blockquote>
+</li>
+<li><p>极化电压</p>
+<blockquote>
+<p>在收集极与极化极之间， 加一极化电压， 即可形成一电场， 使火焰中形成的正、负离子彼此分开。<br><img src="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 16.43.34.png" alt="Screen Shot 2017-12-29 at 16.43.34"></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>电子俘获检测器Electron capture detector</p>
+<blockquote>
+<p>一种放射性离子化检测器，与火焰离子化检测器相似，也需要一个能源和一个电场。能源多数用63Ni放射源.<br>ＥＣＤ有很强的选择性，对具有电负性物质的检测灵敏度很高。它是目前分析痕量电负性有机物最有效的检测器。<br>它的缺点是线性范围窄， 只有10^3 左右，且响应易受操作条件的影响， 重现性较差。        +</p>
+</blockquote>
+<ul>
+<li>电子俘获检测器原理<blockquote>
+<p>检测器内腔有两个电极和筒状的β放射源。β放射源贴在阴极壁上，以不锈钢棒作正极，在两极施加直流或脉冲电压。放射源的β射线将载气电离，产生电子和正离子，在电场作用下，电子向正极走向移动，形成恒定基流。<br>当载气带有电负性溶质进入检测器时，电负性溶质就能捕获这些低能量 的自由电子，形成稳定的负离子，负离子再与载气正离子复合成中性化 合物，使基流降低而产生负信号——倒峰 。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>火焰光度检测器 flame photometric detector,FPD</p>
+<blockquote>
+<p>又称硫、磷检测器，它是一种对含磷、硫有机化合物具有高选择性和高灵敏度的质量型检测器，检测限很高。<br>这种检测器可用于大气中痕量硫化物以及农副产品，水中的毫微克级有机磷和有机硫农药残留量的测定，也可用于汽、柴油中硫化物的分析。</p>
+</blockquote>
+<ul>
+<li><p>工作原理</p>
+<blockquote>
+<p>硫和磷化合物在富氢火焰中燃烧时，生成化学发光物 质，并能发射出特征波长的光，记录这些特征光谱，就 能检测硫和磷。以硫为例，有以下反应发生：<br><img src="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 16.53.29.png" alt="Screen Shot 2017-12-29 at 16.53.29-c"><br>当激发态S2* 分子返回基态时发射出特征波长光λmax为394nm。 对含磷化合物燃烧时生成磷的氧化物，然后在富氢火焰中被氢还 原，形成化学发光的HPO碎片，并发射出λmax 526 nm的特征光谱。这些光由光电信增管转换成信号，经放大后由记录仪或工作站记录。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>氮磷检测器NPD</p>
+<blockquote>
+<p>元素选择性检测器，可选择性地检测含硫、含磷有机化合物,为FID的变体。NPD结构与FID相似，主要差别是NPD在喷嘴上方有铷珠，氢气流速很低，约为3 ~ 6mL/min，空气流速为 100 ~140 mL/min， 因此，不能产生自维持火焰。采用负极化电压，收集极收集负离子流。</p>
+</blockquote>
+</li>
+<li><p>质谱检测器</p>
+<blockquote>
+<p>GC与MS联用即将GC与MS通过接口联接起来， GC将复杂混合物分离成单组分进入MS进行检测或鉴定。</p>
+</blockquote>
+</li>
+<li><p>多检测器组合</p>
+<blockquote>
+<p>该法是将两（多）个检测器组合在一起，同时或分时 检测，得到两个或多个检测结果，综合和发展了各检 测器的响应特征，为被测组分提供更多的定性信息。<br>分为：分体组合和一体组合。<br>分体组合即采用串（并）联的方式，将不同检测器组 合在一起，对同一样品同时（或分时）得到不同的色 谱图。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="气相色谱固定相"><a href="#气相色谱固定相" class="headerlink" title="气相色谱固定相"></a>气相色谱固定相</h3><p>分类：</p>
+<ul>
+<li><p>气-固色谱固定相</p>
+<ul>
+<li><p>无机吸附剂</p>
+<blockquote>
+<p>硅藻土\氧化铝\硅胶\分子筛\高比表面的活性碳和石墨化碳黑。</p>
+</blockquote>
+</li>
+<li>有机吸附剂<blockquote>
+<p>多孔聚合物:苯乙烯-二乙烯基苯共聚物,用于气体分析;<br>低碳数有机化合物，酸，胺，水，有机溶剂中的水份分析.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>气-液色谱固定相</p>
+<ul>
+<li>聚硅烷</li>
+<li>非聚硅烷</li>
+</ul>
+</li>
+<li><p>常用的GC液体固定液</p>
+<blockquote>
+<p><img src="http://okr3rrs4n.bkt.clouddn.com/Screen Shot 2017-12-29 at 18.02.25.png" alt="Screen Shot 2017-12-29 at 18.02.25"></p>
+</blockquote>
+</li>
+<li><p>气液色谱GLC担体的作用（填充柱）</p>
+<blockquote>
+<p>担体为液体固定相提供一个能够使其均匀分布的支持表面<br>影响分离效能的担体的物理性质有：颗粒大小、孔度、表面积、填充密度（Van Deemter）</p>
+</blockquote>
+<ol>
+<li>具有足够大的表面积和良好的孔穴结构，使固定液能均匀 地分布成一薄膜，但表面积不宜太大，否则易造成峰拖尾；</li>
+<li>表面呈化学惰性，没有吸附性或吸附性很弱，更不能与被 测物起反应；</li>
+<li><p>热稳定性好；形状规则，粒度均匀，具有一定机械强度。</p>
+<blockquote>
+<p>每一种担体都用其局限性，没有一个完美的担体。</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><p>固定液选择</p>
+<ul>
+<li>GC载气与样品溶质分子间的作用力很小，可忽略。分离选择性主要取决于与固定相的相互作用力的差别。与固定相作用力大的组分，保留强。</li>
+<li>这种分子间作用力包括：定向力、诱导力、色散力和氢键。此外，固定液与被分离组分间还可能存在形成化合物或配合物等的键合力。</li>
+</ul>
+</li>
+<li><p>气液色谱固定相固定液的选择</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分离物质</th>
+<th style="text-align:left">固定液</th>
+<th style="text-align:left">流出次序</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">没有规律性可循</td>
+<td style="text-align:left">按“相似相溶” 原则</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">非极性物质</td>
+<td style="text-align:left">非极性固定液</td>
+<td style="text-align:left">各组分按沸点由低到高依次流出</td>
+</tr>
+<tr>
+<td style="text-align:left">极性物质</td>
+<td style="text-align:left">极性固定液</td>
+<td style="text-align:left">各组分按极性由小到大依次分离流出</td>
+</tr>
+<tr>
+<td style="text-align:left">非极性和极性混合物</td>
+<td style="text-align:left">极性固定液</td>
+<td style="text-align:left">非极性组分先流出，极性组分后流出</td>
+</tr>
+<tr>
+<td style="text-align:left">分离能形成氢键的试样</td>
+<td style="text-align:left">选用极性或氢键型固定液</td>
+<td style="text-align:left">各组分按与固定液分子间形成氢键能力大小先后流出，不易形成氢键的先流出，最易形成氢键的最后流出。</td>
+</tr>
+<tr>
+<td style="text-align:left">复杂的难分离物质</td>
+<td style="text-align:left">选用两种或两种以上混合固定液</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">样品极性情况未知</td>
+<td style="text-align:left">用最常用的几种固定液做试验</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qrcode.jpg" alt="cxjiang wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.JPG" alt="cxjiang WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.JPG" alt="cxjiang Alipay">
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      cxjiang
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="cxjiang.top/2017/12/29/GC-principle-shanghaitech/" title="气相色谱法原理-现代仪器分析复习整理">cxjiang.top/2017/12/29/GC-principle-shanghaitech/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/气相色谱/" rel="tag"># 气相色谱</a>
+          
+            <a href="/tags/现代仪器/" rel="tag"># 现代仪器</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/22/english-level8/" rel="next" title="综合英语Level8知识点汇总">
+                <i class="fa fa-chevron-left"></i> 综合英语Level8知识点汇总
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/03/test/" rel="prev" title="重装测试">
+                重装测试 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="cxjiang">
+          <p class="site-author-name" itemprop="name">cxjiang</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">62</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">81</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="mailto:&#106;&#99;&#120;&#55;&#48;&#49;&#48;&#48;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109" target="_blank" title="Email">
+                  
+                    <i class="fa fa-fw fa-envelope-o"></i>
+                  
+                  Email
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/1699473805/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/jcx70100" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/u/340c09a97d3a" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-book"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://onedrive.live.com/?authkey=%21APdZwNrXUE7iLSY&id=CC9BE3F0ECB7164%219399&cid=0CC9BE3F0ECB7164" target="_blank" title="Files分享">
+                  
+                    <i class="fa fa-fw fa-share-alt"></i>
+                  
+                  Files分享
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons">
+            </a>
+          </div>
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.czu.cn/" title="CIT" target="_blank">CIT</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.wmakh.com/" title="WMA&KH" target="_blank">WMA&KH</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#气相色谱法"><span class="nav-number">1.</span> <span class="nav-text">气相色谱法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#气相色谱法的基本原理"><span class="nav-number">1.1.</span> <span class="nav-text">气相色谱法的基本原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#气相色谱仪的结构组成"><span class="nav-number">1.1.1.</span> <span class="nav-text">气相色谱仪的结构组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#各单元功能"><span class="nav-number">1.1.2.</span> <span class="nav-text">各单元功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#供气系统"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">供气系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#进样技术"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">进样技术</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#温度控制系统"><span class="nav-number">1.1.2.3.</span> <span class="nav-text">温度控制系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#气相色谱柱"><span class="nav-number">1.1.2.4.</span> <span class="nav-text">气相色谱柱</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#检测器"><span class="nav-number">1.1.2.5.</span> <span class="nav-text">检测器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#气相色谱固定相"><span class="nav-number">1.1.3.</span> <span class="nav-text">气相色谱固定相</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+
+
+<div class="copyright">
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-star">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">cxjiang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+
+
+<div>
+<span id="busuanzi_container_site_pv">
+    Total visited <span id="busuanzi_value_site_pv"></span> times
+</span>
+</div>
+
+<div>
+<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+</div>
+
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://tingfeng.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'cxjiang.top/2017/12/29/GC-principle-shanghaitech/';
+          this.page.identifier = '2017/12/29/GC-principle-shanghaitech/';
+          this.page.title = '气相色谱法原理-现代仪器分析复习整理';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://tingfeng.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("wg8YqRpHsKpFeakal2Auq3Gp-gzGzoHsz", "WDfyk7eOEE9M6815p1xb9Hle");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+
+  
+
+</body>
+</html>
