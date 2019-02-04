@@ -32,9 +32,9 @@
       <category term="瞎折腾" scheme="cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="proxy" scheme="cxjiang.top/tags/proxy/"/>
-    
       <category term="rclone" scheme="cxjiang.top/tags/rclone/"/>
+    
+      <category term="proxy" scheme="cxjiang.top/tags/proxy/"/>
     
   </entry>
   
@@ -330,9 +330,9 @@
       <category term="瞎折腾" scheme="cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="Linux" scheme="cxjiang.top/tags/Linux/"/>
-    
       <category term="proxy" scheme="cxjiang.top/tags/proxy/"/>
+    
+      <category term="Linux" scheme="cxjiang.top/tags/Linux/"/>
     
       <category term="全局" scheme="cxjiang.top/tags/%E5%85%A8%E5%B1%80/"/>
     
