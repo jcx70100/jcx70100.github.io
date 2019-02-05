@@ -95,41 +95,41 @@
 <meta name="keywords" content="Ubuntu,Shadowsocks,VPN,部署,客户端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="各种系统下Shadowsocks客户端的安装与配置">
-<meta property="og:url" content="cxjiang.top/2017/01/15/shadowsocks/index.html">
+<meta property="og:url" content="https://cxjiang.top/2017/01/15/shadowsocks/index.html">
 <meta property="og:site_name" content="听风 | Thinking">
 <meta property="og:description" content="下面介绍如何在 Windows / Mac / Linux(Ubuntu) / Android 系统下对Shadowsocks的客户端（下面简称SS）的安装和配置，以便于使用相应的VPN服务。在此之前假设你已经知道了SS服务器的端口和密码，如果不知道的话，可以向VPN的提供者（管理员）索要。这里假设你使用的是我的VPN服务，端口号和密码已经获取得到，请结合自己所使用的系统环境找到对应的安装配置方法">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="/15/shadowsocks/1-1.png">
-<meta property="og:image" content="/15/shadowsocks/2-1.png">
-<meta property="og:image" content="/15/shadowsocks/2-2.png">
-<meta property="og:image" content="/15/shadowsocks/3-1.png">
-<meta property="og:image" content="/15/shadowsocks/3-2.png">
-<meta property="og:image" content="/15/shadowsocks/3-3.png">
-<meta property="og:image" content="/15/shadowsocks/3-4.png">
-<meta property="og:image" content="/15/shadowsocks/3-5.png">
-<meta property="og:image" content="/15/shadowsocks/3-6.png">
-<meta property="og:image" content="/15/shadowsocks/3-7.png">
-<meta property="og:image" content="/15/shadowsocks/3-8.png">
-<meta property="og:image" content="/15/shadowsocks/3-9.png">
-<meta property="og:image" content="/15/shadowsocks/3-10.png">
-<meta property="og:image" content="/15/shadowsocks/3-11.png">
-<meta property="og:image" content="/15/shadowsocks/3-12.png">
-<meta property="og:image" content="/15/shadowsocks/3-13.png">
-<meta property="og:image" content="/15/shadowsocks/3-14.png">
-<meta property="og:image" content="/15/shadowsocks/4-1.png">
-<meta property="og:image" content="/15/shadowsocks/4-2.png">
-<meta property="og:image" content="/15/shadowsocks/4-3.png">
-<meta property="og:image" content="/15/shadowsocks/4-4.png">
-<meta property="og:image" content="/15/shadowsocks/5-1.jpg">
-<meta property="og:image" content="/15/shadowsocks/5-2.jpg">
-<meta property="og:image" content="/15/shadowsocks/5-3.jpg">
-<meta property="og:image" content="/15/shadowsocks/5-4.jpg">
-<meta property="og:image" content="/15/shadowsocks/5-5.jpg">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/1-1.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/2-1.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/2-2.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-1.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-2.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-3.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-4.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-5.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-6.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-7.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-8.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-9.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-10.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-11.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-12.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-13.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/3-14.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/4-1.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/4-2.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/4-3.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/4-4.png">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/5-1.jpg">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/5-2.jpg">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/5-3.jpg">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/5-4.jpg">
+<meta property="og:image" content="https://cxjiang.top/2017/01/15/shadowsocks/5-5.jpg">
 <meta property="og:updated_time" content="2017-04-20T06:08:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="各种系统下Shadowsocks客户端的安装与配置">
 <meta name="twitter:description" content="下面介绍如何在 Windows / Mac / Linux(Ubuntu) / Android 系统下对Shadowsocks的客户端（下面简称SS）的安装和配置，以便于使用相应的VPN服务。在此之前假设你已经知道了SS服务器的端口和密码，如果不知道的话，可以向VPN的提供者（管理员）索要。这里假设你使用的是我的VPN服务，端口号和密码已经获取得到，请结合自己所使用的系统环境找到对应的安装配置方法">
-<meta name="twitter:image" content="/15/shadowsocks/1-1.png">
+<meta name="twitter:image" content="https://cxjiang.top/2017/01/15/shadowsocks/1-1.png">
 
 
 
@@ -157,7 +157,7 @@
 
 
 
-  <link rel="canonical" href="cxjiang.top/2017/01/15/shadowsocks/">
+  <link rel="canonical" href="https://cxjiang.top/2017/01/15/shadowsocks/">
 
 
 
@@ -353,7 +353,7 @@
   
 
   <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="cxjiang.top/2017/01/15/shadowsocks/">
+    <link itemprop="mainEntityOfPage" href="https://cxjiang.top/2017/01/15/shadowsocks/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="cxjiang">
@@ -489,7 +489,7 @@
 <p>密码：gtzc</p>
 <p>下载解压后，你会看到一个Shadowsocks.exe的文件。</p>
 <h2 id="第二步：配置客户端"><a href="#第二步：配置客户端" class="headerlink" title="第二步：配置客户端"></a>第二步：配置客户端</h2><p>运行exe文件，你会看到如下窗口；请按照图片中的内容进行配置：</p>
-<div align="center"><br><img src="/15/shadowsocks/1-1.png" alt="图 1-1"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/1-1.png" alt="图 1-1"><br></div>
 
 <p>输入端口号和密码，点击OK，右键右下角的运行图标：勾选[启动系统代理]，之后你应该就可以正常访问外网了。</p>
 <blockquote>
@@ -500,10 +500,10 @@
 <p>密码：pa4z</p>
 <p>解压缩后，你会看到一个Shadowsocks-2.6.3.dmg文件。双击打开，并按照提示将ShadowsocksX拖拽至Applications文件夹完成安装。</p>
 <h2 id="第二步：运行客户端"><a href="#第二步：运行客户端" class="headerlink" title="第二步：运行客户端"></a>第二步：运行客户端</h2><p>运行ShadowsocksX后，会提示输入密码进行安装，如下图所示，请输入帐号密码并继续。</p>
-<div align="center"><br><img src="/15/shadowsocks/2-1.png" alt="图 2-1"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/2-1.png" alt="图 2-1"><br></div>
 
 <p>点击左下角+号添加服务器，你会看到如下窗口；请按照图片中的内容进行配置：</p>
-<div align="center"><br><img src="/15/shadowsocks/2-2.png" alt="图 2-2"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/2-2.png" alt="图 2-2"><br></div>
 
 <p>输入给你的端口号和密码，点击OK即可。此时你应该就能够访问国外网络了。</p>
 <blockquote>
@@ -518,7 +518,7 @@
 <p>启动Shadowsocks<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sslocal -s 服务器域名或IP -p 服务器端口号 -k “密码” -l <span class="number">1080</span> -t <span class="number">600</span> -m rc4-md5</span><br></pre></td></tr></table></figure></p>
 <p><strong>注意：密码格式为”*”，包含双引号。</strong></p>
 <p>正常情况下应显示如下：</p>
-<div align="center"><br><img src="/15/shadowsocks/3-1.png" alt="图 3-1"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-1.png" alt="图 3-1"><br></div>
 
 <p>（注意图中的命令按照实际情况输入。）</p>
 <h2 id="第二步：配置浏览器"><a href="#第二步：配置浏览器" class="headerlink" title="第二步：配置浏览器"></a>第二步：配置浏览器</h2><p>这里仅以Firefox和Chrome为例，其他浏览器可自行搜索，配置方式相似。</p>
@@ -526,35 +526,35 @@
 <li>Firefox浏览器</li>
 </ol>
 <p>添加并安装插件</p>
-<div align="center"><br><img src="/15/shadowsocks/3-2.png" alt="图 3-2"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-2.png" alt="图 3-2"><br></div>
 
 <p>搜索”foxyproxy”，</p>
-<div align="center"><br><img src="/15/shadowsocks/3-3.png" alt="图 3-3"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-3.png" alt="图 3-3"><br></div>
 
 <p>重启浏览器后，配置foxyproxy</p>
-<div align="center"><br><img src="/15/shadowsocks/3-4.png" alt="图 3-4"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-4.png" alt="图 3-4"><br></div>
 
 <p>新建代理服务器：</p>
-<div align="center"><br><img src="/15/shadowsocks/3-5.png" alt="图 3-5"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-5.png" alt="图 3-5"><br></div>
 
 <p>起一个代理名称：</p>
-<div align="center"><br><img src="/15/shadowsocks/3-6.png" alt="图 3-6"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-6.png" alt="图 3-6"><br></div>
 
 <p>配置代理服务器：</p>
-<div align="center"><br><img src="/15/shadowsocks/3-7.png" alt="图 3-7"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-7.png" alt="图 3-7"><br></div>
 
 <p>添加“模式订阅”：</p>
-<div align="center"><br><img src="/15/shadowsocks/3-8.png" alt="图 3-8"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-8.png" alt="图 3-8"><br></div>
 
 <p>建议把下面两个模式文件都订阅一下：</p>
 <p><a href="http://firefoxfan.org/gfwlist/gfwlist.txt" target="_blank" rel="noopener">http://firefoxfan.org/gfwlist/gfwlist.txt</a><br><a href="http://sslite.top/gfwlist/gfwlist.txt" target="_blank" rel="noopener">http://sslite.top/gfwlist/gfwlist.txt</a></p>
-<div align="center"><br><img src="/15/shadowsocks/3-9.png" alt="图 3-9"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-9.png" alt="图 3-9"><br></div>
 
 <p>显示模式订阅导入成功：</p>
-<div align="center"><br><img src="/15/shadowsocks/3-10.png" alt="图 3-10"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-10.png" alt="图 3-10"><br></div>
 
 <p>之后重启浏览器，点击浏览器上的应用图标，选择“使用预定义模板的代理服器”：</p>
-<div align="center"><br><img src="/15/shadowsocks/3-11.png" alt="图 3-11"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-11.png" alt="图 3-11"><br></div>
 
 <p>此时你应该可以使用firefox浏览器浏览国外网站了。</p>
 <ol start="2">
@@ -562,49 +562,49 @@
 </ol>
 <p>安装SwitchySharp插件、<br>在Chrome的插件商店里搜索”SwitchSharp”并安装：</p>
 <p><strong>注意，这个插件必须安装，可以现在百度下载后安装到chrome浏览器，因为此时还不能打开google应用商店进行下载</strong></p>
-<div align="center"><br><img src="/15/shadowsocks/3-12.png" alt="图 3-12"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-12.png" alt="图 3-12"><br></div>
 
 <p>安装完之后，重启浏览器，浏览器右上角会出现应用的图标：</p>
-<div align="center"><br><img src="/15/shadowsocks/3-13.png" alt="图 3-13"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-13.png" alt="图 3-13"><br></div>
 
 <p>然后点击”Options”，按照如下进行配置：</p>
-<div align="center"><br><img src="/15/shadowsocks/3-14.png" alt="图 3-14"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/3-14.png" alt="图 3-14"><br></div>
 
 <p>配置完成后，重启浏览器，点击应用图标，选择刚才配置的”SS”即可。之后你应该就可以正常访问国外网站啦。</p>
 <h1 id="iOS系统下的Shadowsocks配置"><a href="#iOS系统下的Shadowsocks配置" class="headerlink" title="iOS系统下的Shadowsocks配置"></a>iOS系统下的Shadowsocks配置</h1><p>适用于iPhone和iPad。</p>
 <p>首先打开AppStore应用商店，搜索Wingy应用（目前是免费应用），下载并安装。</p>
 <h2 id="第一步：添加线路"><a href="#第一步：添加线路" class="headerlink" title="第一步：添加线路"></a>第一步：添加线路</h2><p>打开应用后，首页显示如下，点击[选择线路（添加线路）]：</p>
-<div align="center"><br><img src="/15/shadowsocks/4-1.png" alt="图 4-1"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/4-1.png" alt="图 4-1"><br></div>
 
-<div align="center"><br><img src="/15/shadowsocks/4-2.png" alt="图 4-2"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/4-2.png" alt="图 4-2"><br></div>
 
 <h2 id="第二步：配置"><a href="#第二步：配置" class="headerlink" title="第二步：配置"></a>第二步：配置</h2><p>按照如下的红框要求，填写配置信息（你的端口号和密码），最后保存退出。</p>
-<div align="center"><br><img src="/15/shadowsocks/4-3.png" alt="图 4-3"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/4-3.png" alt="图 4-3"><br></div>
 
 <p>回到首页后，点击中间大大的 [开启按钮] 即可打开VPN（注意：弹出的系统框选择Allow）。</p>
 <p>之后你就可以自由地上网啦~</p>
-<div align="center"><br><img src="/15/shadowsocks/4-4.png" alt="图 4-4"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/4-4.png" alt="图 4-4"><br></div>
 
 <h1 id="Android系统下的Shadowsocks配置"><a href="#Android系统下的Shadowsocks配置" class="headerlink" title="Android系统下的Shadowsocks配置"></a>Android系统下的Shadowsocks配置</h1><p>下面介绍如何在Android系统下进行Shadowsocks的配置，以使用VPN服务。注意，你的安卓手机最好先root，root的教程就不再赘述了，网上搜索下载个root的软件即可。本教程使用的安卓手机为乐视1s手机，其他安卓系统的手机操作方式类似。</p>
 <h2 id="第一步：下载SS客户端-2"><a href="#第一步：下载SS客户端-2" class="headerlink" title="第一步：下载SS客户端"></a>第一步：下载SS客户端</h2><p>下载方式：百度云</p>
 <p>下载链接：<a href="https://pan.baidu.com/share/init?shareid=152277073&amp;uk=944000936" target="_blank" rel="noopener">点击此处</a></p>
 <p>密码：i7lr</p>
 <h2 id="第二步：导入apk文件至手机"><a href="#第二步：导入apk文件至手机" class="headerlink" title="第二步：导入apk文件至手机"></a>第二步：导入apk文件至手机</h2><p>（1）手机连接PC后，选择如下的模式进行文件的导入：</p>
-<div align="center"><br><img src="/15/shadowsocks/5-1.jpg" alt="图 5-1"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/5-1.jpg" alt="图 5-1"><br></div>
 
 <p>（2）打开手机中的”文件管理器”，点击相应的apk文件进行安装即可。</p>
 <h2 id="第三步：打开Shadowsocks客户端，进行相应的配置"><a href="#第三步：打开Shadowsocks客户端，进行相应的配置" class="headerlink" title="第三步：打开Shadowsocks客户端，进行相应的配置"></a>第三步：打开Shadowsocks客户端，进行相应的配置</h2><p>（1）填入相应的配置信息：</p>
-<div align="center"><br><img src="/15/shadowsocks/5-2.jpg" alt="图 5-2"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/5-2.jpg" alt="图 5-2"><br></div>
 
 <p><strong>注意，服务器的端口和密码按照实际情况填入。</strong></p>
 <p>还可以通过“分应用代理”来选择什么应用使用代理服务（示例：这里只在使用Chrome的时候使用代理服务）：</p>
-<div align="center"><br><img src="/15/shadowsocks/5-3.jpg" alt="图 5-3"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/5-3.jpg" alt="图 5-3"><br></div>
 
 <p>点击右上角的“开启键”，并保持Shadowsocks客户端在后台的运行。之后你就可以正常访问国外网站啦。</p>
-<div align="center"><br><img src="/15/shadowsocks/5-4.jpg" alt="图 5-4"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/5-4.jpg" alt="图 5-4"><br></div>
 
 <p>使用Chrome浏览器访问，</p>
-<div align="center"><br><img src="/15/shadowsocks/5-5.jpg" alt="图 5-5"><br></div>
+<div align="center"><br><img src="/2017/01/15/shadowsocks/5-5.jpg" alt="图 5-5"><br></div>
 
 <hr>
 <center><a href="http://www.jeyzhang.com/how-to-install-and-setup-shadowsocks-client-in-different-os.html" target="_blank" rel="noopener">原文链接</a></center>
@@ -662,7 +662,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="cxjiang.top/2017/01/15/shadowsocks/" title="各种系统下Shadowsocks客户端的安装与配置">cxjiang.top/2017/01/15/shadowsocks/</a>
+      <a href="https://cxjiang.top/2017/01/15/shadowsocks/" title="各种系统下Shadowsocks客户端的安装与配置">https://cxjiang.top/2017/01/15/shadowsocks/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -1147,7 +1147,7 @@ var _hmt = _hmt || [];
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'cxjiang.top/2017/01/15/shadowsocks/';
+          this.page.url = 'https://cxjiang.top/2017/01/15/shadowsocks/';
           this.page.identifier = '2017/01/15/shadowsocks/';
           this.page.title = '各种系统下Shadowsocks客户端的安装与配置';
         };
