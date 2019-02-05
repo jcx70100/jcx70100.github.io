@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="cxjiang.top/"/>
-  <updated>2018-08-18T05:59:10.000Z</updated>
+  <updated>2019-02-05T03:46:44.422Z</updated>
   <id>cxjiang.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决近期“不蒜子”统计失效问题</title>
+    <link href="cxjiang.top/2019/02/05/busuanzi-recover/"/>
+    <id>cxjiang.top/2019/02/05/busuanzi-recover/</id>
+    <published>2019-02-05T03:22:15.000Z</published>
+    <updated>2019-02-05T03:46:44.422Z</updated>
+    
+    <summary type="html">
+    
+      近期打开Blog发现页面底端的站点统计失效，引用的不蒜子统计出了问题，收集了相关资料发现是不蒜子更改了域名，现将应对方案进行总结。
+    
+    </summary>
+    
+      <category term="瞎折腾" scheme="cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+    
+      <category term="Hexo" scheme="cxjiang.top/tags/Hexo/"/>
+    
+      <category term="统计" scheme="cxjiang.top/tags/%E7%BB%9F%E8%AE%A1/"/>
+    
+      <category term="失效" scheme="cxjiang.top/tags/%E5%A4%B1%E6%95%88/"/>
+    
+      <category term="不蒜子" scheme="cxjiang.top/tags/%E4%B8%8D%E8%92%9C%E5%AD%90/"/>
+    
+  </entry>
   
   <entry>
     <title>rclone使用代理配置GoogleDrive</title>
@@ -429,30 +455,6 @@
       <category term="专业课" scheme="cxjiang.top/tags/%E4%B8%93%E4%B8%9A%E8%AF%BE/"/>
     
       <category term="电子线路" scheme="cxjiang.top/tags/%E7%94%B5%E5%AD%90%E7%BA%BF%E8%B7%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>考研专业课真题搜寻方法总结</title>
-    <link href="cxjiang.top/2017/05/01/GRE-major-doc/"/>
-    <id>cxjiang.top/2017/05/01/GRE-major-doc/</id>
-    <published>2017-05-01T00:50:11.000Z</published>
-    <updated>2017-05-06T14:02:01.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;font color=&quot;darkblue&quot; size=&quot;4&quot;&gt;考研中，除了三门公共课（有的专业是两门），还有一门是专业课，相对于公共课来说，专业课资料的查找就有点难度了，在此总结一下我自己考研过程中寻找专业课资料的经验吧。&lt;/font&gt;
-    
-    </summary>
-    
-      <category term="考研" scheme="cxjiang.top/categories/%E8%80%83%E7%A0%94/"/>
-    
-    
-      <category term="考研" scheme="cxjiang.top/tags/%E8%80%83%E7%A0%94/"/>
-    
-      <category term="专业课" scheme="cxjiang.top/tags/%E4%B8%93%E4%B8%9A%E8%AF%BE/"/>
-    
-      <category term="真题" scheme="cxjiang.top/tags/%E7%9C%9F%E9%A2%98/"/>
     
   </entry>
   
