@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxjiang.top/"/>
-  <updated>2019-06-30T07:05:51.886Z</updated>
+  <updated>2019-06-30T13:53:46.936Z</updated>
   <id>https://cxjiang.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>10天幸福福流冥想</title>
+    <link href="https://cxjiang.top/2019/06/30/10daysxingfufuliu/"/>
+    <id>https://cxjiang.top/2019/06/30/10daysxingfufuliu/</id>
+    <published>2019-06-30T13:35:37.000Z</published>
+    <updated>2019-06-30T13:53:46.936Z</updated>
+    
+    <summary type="html">
+    
+      &lt;center&gt;&lt;br&gt;&lt;strong&gt;Now正念冥想-10天幸福福流冥想课程-让积极心理科学和福流幸福理论为你所用，让你的福流随叫随到，获得幸福能力的持续提升。&lt;/strong&gt;&lt;br&gt;&lt;/center&gt;
+    
+    </summary>
+    
+      <category term="Now正念冥想" scheme="https://cxjiang.top/categories/Now%E6%AD%A3%E5%BF%B5%E5%86%A5%E6%83%B3/"/>
+    
+    
+      <category term="now" scheme="https://cxjiang.top/tags/now/"/>
+    
+      <category term="正念，幸福" scheme="https://cxjiang.top/tags/%E6%AD%A3%E5%BF%B5%EF%BC%8C%E5%B9%B8%E7%A6%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Now-5天吸引力冥想</title>
@@ -206,9 +228,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
-    
       <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
+    
+      <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
     
       <category term="VPS" scheme="https://cxjiang.top/tags/VPS/"/>
     
@@ -230,9 +252,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
-    
       <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
+    
+      <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
     
   </entry>
   
@@ -425,30 +447,6 @@
       <category term="proxy" scheme="https://cxjiang.top/tags/proxy/"/>
     
       <category term="全局" scheme="https://cxjiang.top/tags/%E5%85%A8%E5%B1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>用Resilio Sync同步考研资料</title>
-    <link href="https://cxjiang.top/2017/07/20/aboutresiliosync/"/>
-    <id>https://cxjiang.top/2017/07/20/aboutresiliosync/</id>
-    <published>2017-07-20T09:22:58.000Z</published>
-    <updated>2017-07-20T09:41:15.000Z</updated>
-    
-    <summary type="html">
-    
-      由于百度网盘对于非会员用户下载限速，并且和谐用户网盘文件，出于资料的分享安全性和稳定性，介绍一个新的分享方式。
-    
-    </summary>
-    
-      <category term="考研" scheme="https://cxjiang.top/categories/%E8%80%83%E7%A0%94/"/>
-    
-    
-      <category term="考研" scheme="https://cxjiang.top/tags/%E8%80%83%E7%A0%94/"/>
-    
-      <category term="资料" scheme="https://cxjiang.top/tags/%E8%B5%84%E6%96%99/"/>
-    
-      <category term="ResilioSync" scheme="https://cxjiang.top/tags/ResilioSync/"/>
     
   </entry>
   
