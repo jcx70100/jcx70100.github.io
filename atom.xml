@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxjiang.top/"/>
-  <updated>2019-06-30T05:36:11.395Z</updated>
+  <updated>2019-06-30T06:02:19.763Z</updated>
   <id>https://cxjiang.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Now-7天舒眠冥想</title>
+    <link href="https://cxjiang.top/2019/06/30/now-7daysshumian/"/>
+    <id>https://cxjiang.top/2019/06/30/now-7daysshumian/</id>
+    <published>2019-06-30T05:49:19.000Z</published>
+    <updated>2019-06-30T06:02:19.763Z</updated>
+    
+    <summary type="html">
+    
+      Now正念冥想-7天舒眠冥想课程-7天带你拥有深度放松的高质量睡眠
+    
+    </summary>
+    
+      <category term="Now正念冥想" scheme="https://cxjiang.top/categories/Now%E6%AD%A3%E5%BF%B5%E5%86%A5%E6%83%B3/"/>
+    
+    
+      <category term="now" scheme="https://cxjiang.top/tags/now/"/>
+    
+      <category term="睡眠" scheme="https://cxjiang.top/tags/%E7%9D%A1%E7%9C%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>音乐测试</title>
@@ -162,9 +184,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
-    
       <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
+    
+      <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
     
       <category term="VPS" scheme="https://cxjiang.top/tags/VPS/"/>
     
@@ -186,9 +208,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
-    
       <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
+    
+      <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
     
   </entry>
   
@@ -429,28 +451,6 @@
       <category term="真题" scheme="https://cxjiang.top/tags/%E7%9C%9F%E9%A2%98/"/>
     
       <category term="856电子线路" scheme="https://cxjiang.top/tags/856%E7%94%B5%E5%AD%90%E7%BA%BF%E8%B7%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>单片机入门教学视频-流水灯</title>
-    <link href="https://cxjiang.top/2017/05/06/microcontroller-tutorials/"/>
-    <id>https://cxjiang.top/2017/05/06/microcontroller-tutorials/</id>
-    <published>2017-05-06T12:50:05.000Z</published>
-    <updated>2017-05-06T13:15:49.000Z</updated>
-    
-    <summary type="html">
-    
-      单片机的入门教学视频，主要以流水灯为例，讲解单片机的基础知识，并从代码编写，到软件仿真，进行全流程教学示范。
-    
-    </summary>
-    
-      <category term="术业专攻" scheme="https://cxjiang.top/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
-    
-    
-      <category term="单片机" scheme="https://cxjiang.top/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
-    
-      <category term="流水灯" scheme="https://cxjiang.top/tags/%E6%B5%81%E6%B0%B4%E7%81%AF/"/>
     
   </entry>
   
