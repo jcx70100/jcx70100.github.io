@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxjiang.top/"/>
-  <updated>2019-06-30T06:09:28.461Z</updated>
+  <updated>2019-06-30T06:14:36.581Z</updated>
   <id>https://cxjiang.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://cxjiang.top/2019/06/30/now-7daysshumian/"/>
     <id>https://cxjiang.top/2019/06/30/now-7daysshumian/</id>
     <published>2019-06-30T05:49:19.000Z</published>
-    <updated>2019-06-30T06:09:28.461Z</updated>
+    <updated>2019-06-30T06:14:36.581Z</updated>
     
     <summary type="html">
     
@@ -184,9 +184,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
-    
       <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
+    
+      <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
     
       <category term="VPS" scheme="https://cxjiang.top/tags/VPS/"/>
     
@@ -208,9 +208,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
-    
       <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
+    
+      <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
     
   </entry>
   
