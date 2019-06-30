@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxjiang.top/"/>
-  <updated>2019-06-30T05:00:45.618Z</updated>
+  <updated>2019-06-30T05:13:55.442Z</updated>
   <id>https://cxjiang.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://cxjiang.top/2019/06/30/music-test/"/>
     <id>https://cxjiang.top/2019/06/30/music-test/</id>
     <published>2019-06-30T04:55:23.000Z</published>
-    <updated>2019-06-30T05:00:45.618Z</updated>
+    <updated>2019-06-30T05:13:55.442Z</updated>
     
     <summary type="html">
     
@@ -78,9 +78,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="rclone" scheme="https://cxjiang.top/tags/rclone/"/>
-    
       <category term="proxy" scheme="https://cxjiang.top/tags/proxy/"/>
+    
+      <category term="rclone" scheme="https://cxjiang.top/tags/rclone/"/>
     
   </entry>
   
@@ -162,9 +162,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
-    
       <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
+    
+      <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
     
       <category term="VPS" scheme="https://cxjiang.top/tags/VPS/"/>
     
@@ -186,9 +186,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
-    
       <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
+    
+      <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
     
   </entry>
   
@@ -354,9 +354,9 @@
       <category term="术业专攻" scheme="https://cxjiang.top/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
     
     
-      <category term="笔记" scheme="https://cxjiang.top/tags/%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="固体物理" scheme="https://cxjiang.top/tags/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/"/>
+    
+      <category term="笔记" scheme="https://cxjiang.top/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -376,9 +376,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="proxy" scheme="https://cxjiang.top/tags/proxy/"/>
-    
       <category term="Linux" scheme="https://cxjiang.top/tags/Linux/"/>
+    
+      <category term="proxy" scheme="https://cxjiang.top/tags/proxy/"/>
     
       <category term="全局" scheme="https://cxjiang.top/tags/%E5%85%A8%E5%B1%80/"/>
     
