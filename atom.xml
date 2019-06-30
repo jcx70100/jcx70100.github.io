@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxjiang.top/"/>
-  <updated>2019-06-30T13:53:46.936Z</updated>
+  <updated>2019-06-30T13:58:00.445Z</updated>
   <id>https://cxjiang.top/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>10天幸福福流冥想</title>
+    <title>Now-10天幸福福流冥想</title>
     <link href="https://cxjiang.top/2019/06/30/10daysxingfufuliu/"/>
     <id>https://cxjiang.top/2019/06/30/10daysxingfufuliu/</id>
     <published>2019-06-30T13:35:37.000Z</published>
-    <updated>2019-06-30T13:53:46.936Z</updated>
+    <updated>2019-06-30T13:58:00.445Z</updated>
     
     <summary type="html">
     
@@ -420,9 +420,9 @@
       <category term="术业专攻" scheme="https://cxjiang.top/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
     
     
-      <category term="笔记" scheme="https://cxjiang.top/tags/%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="固体物理" scheme="https://cxjiang.top/tags/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/"/>
+    
+      <category term="笔记" scheme="https://cxjiang.top/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -442,9 +442,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="Linux" scheme="https://cxjiang.top/tags/Linux/"/>
-    
       <category term="proxy" scheme="https://cxjiang.top/tags/proxy/"/>
+    
+      <category term="Linux" scheme="https://cxjiang.top/tags/Linux/"/>
     
       <category term="全局" scheme="https://cxjiang.top/tags/%E5%85%A8%E5%B1%80/"/>
     
