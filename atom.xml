@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxjiang.top/"/>
-  <updated>2019-02-05T03:49:20.762Z</updated>
+  <updated>2019-06-30T05:00:45.618Z</updated>
   <id>https://cxjiang.top/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>音乐测试</title>
+    <link href="https://cxjiang.top/2019/06/30/music-test/"/>
+    <id>https://cxjiang.top/2019/06/30/music-test/</id>
+    <published>2019-06-30T04:55:23.000Z</published>
+    <updated>2019-06-30T05:00:45.618Z</updated>
+    
+    <summary type="html">
+    
+      hexo博客插入音乐测试。
+    
+    </summary>
+    
+      <category term="music" scheme="https://cxjiang.top/categories/music/"/>
+    
+    
+      <category term="music" scheme="https://cxjiang.top/tags/music/"/>
+    
+  </entry>
   
   <entry>
     <title>解决近期“不蒜子”统计失效问题</title>
@@ -431,30 +451,6 @@
       <category term="单片机" scheme="https://cxjiang.top/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
     
       <category term="流水灯" scheme="https://cxjiang.top/tags/%E6%B5%81%E6%B0%B4%E7%81%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>856电子线路（模电数电）考研复习经验总结</title>
-    <link href="https://cxjiang.top/2017/05/01/GRE-major/"/>
-    <id>https://cxjiang.top/2017/05/01/GRE-major/</id>
-    <published>2017-05-01T05:36:13.000Z</published>
-    <updated>2017-06-28T04:41:11.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;font color=&quot;darkblue&quot; size=&quot;4&quot;&gt;距离2017考研已经结束接近5个月了，现在录取结果已经出来，总体结果还不错，现将自己在专业课的复习过程中遇到的问题和注意事项进行总结，方便大家借鉴和参考，当然，有不同意见可以一起交流。同时，在文章最后会分享相应的复习资料还有真题！&lt;/font&gt;
-    
-    </summary>
-    
-      <category term="考研" scheme="https://cxjiang.top/categories/%E8%80%83%E7%A0%94/"/>
-    
-    
-      <category term="考研" scheme="https://cxjiang.top/tags/%E8%80%83%E7%A0%94/"/>
-    
-      <category term="专业课" scheme="https://cxjiang.top/tags/%E4%B8%93%E4%B8%9A%E8%AF%BE/"/>
-    
-      <category term="电子线路" scheme="https://cxjiang.top/tags/%E7%94%B5%E5%AD%90%E7%BA%BF%E8%B7%AF/"/>
     
   </entry>
   
