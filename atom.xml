@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxjiang.top/"/>
-  <updated>2019-08-02T10:15:34.216Z</updated>
+  <updated>2019-08-02T11:39:38.569Z</updated>
   <id>https://cxjiang.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://cxjiang.top/2019/08/02/v2ray-basic/"/>
     <id>https://cxjiang.top/2019/08/02/v2ray-basic/</id>
     <published>2019-08-02T07:52:44.000Z</published>
-    <updated>2019-08-02T10:15:34.216Z</updated>
+    <updated>2019-08-02T11:39:38.569Z</updated>
     
     <summary type="html">
     
@@ -176,9 +176,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="proxy" scheme="https://cxjiang.top/tags/proxy/"/>
-    
       <category term="rclone" scheme="https://cxjiang.top/tags/rclone/"/>
+    
+      <category term="proxy" scheme="https://cxjiang.top/tags/proxy/"/>
     
   </entry>
   

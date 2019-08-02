@@ -99,7 +99,7 @@
 <meta property="og:site_name" content="听风 | Thinking">
 <meta property="og:description" content="在网络管制愈加严格的今天，在网络上了解一些国际新闻或者查找一些学术资料变得愈加艰难，本文介绍基于v2ray的先进代理搭建方法，实测可以听过各种敏感时期。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-02T10:15:34.216Z">
+<meta property="og:updated_time" content="2019-08-02T11:39:38.569Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最安全的代理方式-V2ray&#x2F;WS&#x2F;Nginx反代&#x2F;TLS配置教程">
 <meta name="twitter:description" content="在网络管制愈加严格的今天，在网络上了解一些国际新闻或者查找一些学术资料变得愈加艰难，本文介绍基于v2ray的先进代理搭建方法，实测可以听过各种敏感时期。">
@@ -378,7 +378,7 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-08-02T18:15:34+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-02T19:39:38+08:00">
                 2019-08-02
               </time>
             
@@ -476,7 +476,7 @@
 <p>证书申请完毕后会存放在<code>/root/.acme.sh/域名_ecc</code>文件夹内，这个路径要记住，后面配置nginx要用到。</p>
 <h2 id="Nginx的安装与配置"><a href="#Nginx的安装与配置" class="headerlink" title="Nginx的安装与配置"></a>Nginx的安装与配置</h2><h3 id="Nginx安装"><a href="#Nginx安装" class="headerlink" title="Nginx安装"></a>Nginx安装</h3><p>由于nginx软件并不在默认的软件列表中，因此我们在安装nginx之前要现将包含nginx的软件源添加到软件源列表，执行如下命令：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> epel-<span class="keyword">release</span></span><br></pre></td></tr></table></figure></p>
 <p>然后进行nginx的安装：<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> nginx​</span><br></pre></td></tr></table></figure></p>
-<p>在终端执行一下指令生成<code>dhparam</code><br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl dhparam -out <span class="regexp">/etc/</span>nginx<span class="regexp">/ssl/</span>dhparam.pem</span><br></pre></td></tr></table></figure></p>
+<p>在终端执行一下指令生成<code>dhparam</code><br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -<span class="selector-tag">p</span> /etc/nginx/ssl</span><br><span class="line">openssl dhparam -out /etc/nginx/ssl/dhparam<span class="selector-class">.pem</span> <span class="number">2048</span></span><br></pre></td></tr></table></figure></p>
 <p>至此Nginx安装完毕，下一步要进行配置。</p>
 <h3 id="Nginx配置"><a href="#Nginx配置" class="headerlink" title="Nginx配置"></a>Nginx配置</h3><p>通过<code>yum install nginx</code>方式安装Nginx之后，对应的配置文件在<code>/etc/nginx/</code>文件夹中。</p>
 <p>首先要修改的是nginx的默认配置文件，我们使用<code>vi /etc/nginx/nginx.conf</code>打开默认配置文件，将里面的内容修改成如下：</p>
@@ -517,9 +517,9 @@
 <p>推荐开放的端口号：<code>443</code>,<code>80</code>,<code>22</code>,<code>nginx转发端口</code></p>
 <p>端口开启完毕之后，执行如下命令并显示新的端口开放信息：<br><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">firewall-<span class="keyword">cmd</span><span class="bash"> --reload</span></span><br><span class="line">firewall-<span class="keyword">cmd</span><span class="bash"> --zone=public --list-ports</span></span><br></pre></td></tr></table></figure></p>
 <p>确认端口都开放无误后，防火墙的配置就结束。</p>
-<h2 id="开启服务并配置开机自启动"><a href="#开启服务并配置开机自启动" class="headerlink" title="开启服务并配置开机自启动"></a>开启服务并配置开机自启动</h2><p>完成以上配置之后，即可开启nginx和v2ray服务：<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systenctl <span class="literal">start</span> nginx</span><br><span class="line">systemctl <span class="literal">start</span> v2ray</span><br></pre></td></tr></table></figure></p>
+<h2 id="开启服务并配置开机自启动"><a href="#开启服务并配置开机自启动" class="headerlink" title="开启服务并配置开机自启动"></a>开启服务并配置开机自启动</h2><p>完成以上配置之后，即可开启nginx和v2ray服务：<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="literal">start</span> nginx</span><br><span class="line">systemctl <span class="literal">start</span> v2ray</span><br></pre></td></tr></table></figure></p>
 <p>如果没有报错，说明一切配置正确。</p>
-<p>最后设置一下nginx和v2ray开机自启动：<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systenctl <span class="builtin-name">enable</span> nginx</span><br><span class="line">systemctl <span class="builtin-name">enable</span> v2ray</span><br></pre></td></tr></table></figure></p>
+<p>最后设置一下nginx和v2ray开机自启动：<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="builtin-name">enable</span> nginx</span><br><span class="line">systemctl <span class="builtin-name">enable</span> v2ray</span><br></pre></td></tr></table></figure></p>
 <p>至此，V2ray + WS + Nginx反代 + TLS 的服务端配置完毕，下面配置客户端即可开始使用。</p>
 <h1 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h1><p>在完成服务端配置后，客户端的配置信息如下，根据不同的客户端填入相应信息即可使用：</p>
 <ul>
