@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cxjiang.top/"/>
-  <updated>2019-06-30T13:58:00.445Z</updated>
+  <updated>2019-08-02T09:22:14.196Z</updated>
   <id>https://cxjiang.top/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>最安全的代理方式-V2ray/WS/Nginx反代/TLS配置教程</title>
+    <link href="https://cxjiang.top/2019/08/02/v2ray-basic/"/>
+    <id>https://cxjiang.top/2019/08/02/v2ray-basic/</id>
+    <published>2019-08-02T07:52:44.000Z</published>
+    <updated>2019-08-02T09:22:14.196Z</updated>
+    
+    <summary type="html">
+    
+      在网络管制愈加严格的今天，在网络上了解一些国际新闻或者查找一些学术资料变得愈加艰难，本文介绍基于v2ray的先进代理搭建方法，实测可以听过各种敏感时期。
+    
+    </summary>
+    
+      <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+    
+      <category term="翻墙" scheme="https://cxjiang.top/tags/%E7%BF%BB%E5%A2%99/"/>
+    
+      <category term="安全" scheme="https://cxjiang.top/tags/%E5%AE%89%E5%85%A8/"/>
+    
+      <category term="代理" scheme="https://cxjiang.top/tags/%E4%BB%A3%E7%90%86/"/>
+    
+      <category term="v2ray" scheme="https://cxjiang.top/tags/v2ray/"/>
+    
+      <category term="nginx" scheme="https://cxjiang.top/tags/nginx/"/>
+    
+      <category term="ws" scheme="https://cxjiang.top/tags/ws/"/>
+    
+      <category term="tls" scheme="https://cxjiang.top/tags/tls/"/>
+    
+  </entry>
   
   <entry>
     <title>Now-10天幸福福流冥想</title>
@@ -65,7 +97,7 @@
     <link href="https://cxjiang.top/2019/06/30/now-7daysshumian/"/>
     <id>https://cxjiang.top/2019/06/30/now-7daysshumian/</id>
     <published>2019-06-30T05:49:19.000Z</published>
-    <updated>2019-07-11T13:25:03.535Z</updated>
+    <updated>2019-07-11T13:27:47.276Z</updated>
     
     <summary type="html">
     
@@ -144,9 +176,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="rclone" scheme="https://cxjiang.top/tags/rclone/"/>
-    
       <category term="proxy" scheme="https://cxjiang.top/tags/proxy/"/>
+    
+      <category term="rclone" scheme="https://cxjiang.top/tags/rclone/"/>
     
   </entry>
   
@@ -228,9 +260,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
-    
       <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
+    
+      <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
     
       <category term="VPS" scheme="https://cxjiang.top/tags/VPS/"/>
     
@@ -252,9 +284,9 @@
       <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
     
-      <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
-    
       <category term="Hexo" scheme="https://cxjiang.top/tags/Hexo/"/>
+    
+      <category term="macOS" scheme="https://cxjiang.top/tags/macOS/"/>
     
   </entry>
   
@@ -423,30 +455,6 @@
       <category term="笔记" scheme="https://cxjiang.top/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="固体物理" scheme="https://cxjiang.top/tags/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu下使用ss设置全局（pac）代理</title>
-    <link href="https://cxjiang.top/2017/08/01/ubuntu-proxy/"/>
-    <id>https://cxjiang.top/2017/08/01/ubuntu-proxy/</id>
-    <published>2017-08-01T02:29:59.000Z</published>
-    <updated>2017-08-01T02:40:39.000Z</updated>
-    
-    <summary type="html">
-    
-      本文介绍了在Linux（Ubuntu）环境下的翻墙代理设置教程，文章转自网络，亲测有效。
-    
-    </summary>
-    
-      <category term="瞎折腾" scheme="https://cxjiang.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
-    
-    
-      <category term="proxy" scheme="https://cxjiang.top/tags/proxy/"/>
-    
-      <category term="Linux" scheme="https://cxjiang.top/tags/Linux/"/>
-    
-      <category term="全局" scheme="https://cxjiang.top/tags/%E5%85%A8%E5%B1%80/"/>
     
   </entry>
   
